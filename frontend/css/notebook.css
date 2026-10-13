@@ -1,0 +1,238 @@
+/* Jupyter Notebook Cell & Interactive Output Styles (Matching Screenshot 1) */
+
+.notebook-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.jupyter-cell {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.jupyter-cell:focus-within, .jupyter-cell.active-cell {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+}
+
+/* Cell Toolbar */
+.cell-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 12.5px;
+}
+
+.cell-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cell-tool-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+
+.cell-tool-btn:hover {
+  color: var(--text-main);
+  background: var(--bg-card-subtle);
+}
+
+.cell-tool-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.cell-type-select {
+  padding: 3px 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.cell-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 11.5px;
+  font-family: var(--font-mono);
+}
+
+.kernel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--success);
+}
+
+/* Code Input Section */
+.cell-input-block {
+  display: flex;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cell-prompt {
+  width: 70px;
+  padding: 14px 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+  text-align: right;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.code-editor-wrapper {
+  flex: 1;
+  position: relative;
+  background: var(--bg-card);
+  overflow-x: auto;
+}
+
+.code-display {
+  margin: 0;
+  padding: 14px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre;
+  tab-size: 4;
+  color: var(--text-main);
+  background: transparent;
+}
+
+/* Python Syntax Highlighting Tokens */
+.syn-comment { color: #059669; font-style: italic; }
+.syn-keyword { color: #7c3aed; font-weight: 600; }
+.syn-string { color: #d97706; }
+.syn-number { color: #0284c7; }
+.syn-function { color: #2563eb; }
+.syn-variable { color: var(--text-main); }
+.syn-bracket { color: #64748b; }
+
+[data-theme="dark"] .syn-comment { color: #34d399; }
+[data-theme="dark"] .syn-keyword { color: #a78bfa; }
+[data-theme="dark"] .syn-string { color: #fbbf24; }
+[data-theme="dark"] .syn-number { color: #38bdf8; }
+[data-theme="dark"] .syn-function { color: #60a5fa; }
+
+/* Code Output Section */
+.cell-output-block {
+  display: flex;
+  background: var(--bg-card);
+}
+
+.cell-prompt.out {
+  color: #dc2626;
+}
+
+[data-theme="dark"] .cell-prompt.out {
+  color: #f87171;
+}
+
+.output-content-wrapper {
+  flex: 1;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+/* Interactive Dataframe Table (Matching Screenshot 1) */
+.dataframe-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.dataframe-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-align: right;
+  background: var(--bg-card);
+}
+
+.dataframe-table th, .dataframe-table td {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.dataframe-table th {
+  background-color: var(--bg-card-subtle);
+  color: var(--text-main);
+  font-weight: 600;
+  text-align: right;
+  border-right: 1px solid var(--border-color);
+}
+
+.dataframe-table td {
+  color: var(--text-main);
+  border-right: 1px solid var(--border-light);
+}
+
+.dataframe-table th:first-child, .dataframe-table td:first-child {
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  background-color: var(--bg-card-subtle);
+  width: 48px;
+}
+
+.dataframe-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dataframe-table tr:hover td {
+  background-color: var(--primary-50);
+}
+
+/* Output Metrics Pill Strip */
+.output-metrics-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+}
+
+.metric-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.metric-tag strong {
+  color: var(--text-main);
+  font-family: var(--font-mono);
+}

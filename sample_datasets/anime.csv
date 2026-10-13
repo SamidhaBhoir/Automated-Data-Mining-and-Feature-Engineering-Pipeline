@@ -1,0 +1,1201 @@
+anime_id,name,genre,type,episodes,rating,members,favorites,popularity
+ANI-5000,Anime Series #100,"Comedy, Slice of Life",TV,12,5.12,65156,982,884
+ANI-5001,Anime Series #101,"Fantasy, Sci-Fi",TV,24,7.93,1971,53,481
+ANI-5002,Anime Series #102,"Comedy, Slice of Life",Special,12,5.67,65168,3312,451
+ANI-5003,Anime Series #103,"Mystery, Psychological",TV,26,8.31,121717,7525,650
+ANI-5004,Anime Series #104,"Comedy, Slice of Life",TV,12,5.75,3401,56,1055
+ANI-5005,Anime Series #105,"Fantasy, Sci-Fi",TV,12,4.85,10815,264,1163
+ANI-5006,Anime Series #106,"Fantasy, Sci-Fi",TV,12,6.07,619,49,689
+ANI-5007,Anime Series #107,"Fantasy, Sci-Fi",TV,50,5.78,6272,210,552
+ANI-5008,Anime Series #108,"Mystery, Psychological",Movie,12,5.78,48484,1448,712
+ANI-5009,Anime Series #109,"Action, Adventure",OVA,26,7.08,2792,44,405
+ANI-5010,Anime Series #110,"Drama, Romance",TV,12,7.39,28241,1656,20
+ANI-5011,Anime Series #111,"Comedy, Slice of Life",Movie,12,8.72,35498,1617,1034
+ANI-5012,Anime Series #112,"Action, Adventure",TV,26,6.8,119058,2503,1073
+ANI-5013,Anime Series #113,"Fantasy, Sci-Fi",TV,12,7.52,32650,1772,1200
+ANI-5014,Anime Series #114,"Action, Adventure",Movie,12,5.74,8189,383,28
+ANI-5015,Anime Series #115,"Action, Adventure",TV,12,6.2,17574,870,953
+ANI-5016,Anime Series #116,"Mystery, Psychological",TV,12,8.63,56266,4481,1130
+ANI-5017,Anime Series #117,"Fantasy, Sci-Fi",Movie,12,8.75,6445,77,512
+ANI-5018,Anime Series #118,"Fantasy, Sci-Fi",OVA,12,8.95,13681,1013,1093
+ANI-5019,Anime Series #119,"Comedy, Slice of Life",Movie,12,7.06,273861,18877,499
+ANI-5020,Anime Series #120,"Comedy, Slice of Life",TV,24,5.74,777,30,586
+ANI-5021,Anime Series #121,"Comedy, Slice of Life",TV,24,6.34,8754,627,1007
+ANI-5022,Anime Series #122,"Comedy, Slice of Life",TV,12,6.84,93294,5168,809
+ANI-5023,Anime Series #123,"Action, Adventure",TV,24,6.58,5844,422,36
+ANI-5024,Anime Series #124,"Action, Adventure",OVA,12,7.32,2210,114,761
+ANI-5025,Anime Series #125,"Comedy, Slice of Life",Movie,24,8.03,6966,175,66
+ANI-5026,Anime Series #126,"Comedy, Slice of Life",TV,24,6.07,59642,3002,154
+ANI-5027,Anime Series #127,"Comedy, Slice of Life",OVA,24,9.31,249388,5619,745
+ANI-5028,Anime Series #128,"Drama, Romance",TV,24,7.28,45157,896,631
+ANI-5029,Anime Series #129,"Comedy, Slice of Life",Movie,12,8.69,7137,398,83
+ANI-5030,Anime Series #130,"Drama, Romance",TV,12,7.67,10653,813,1105
+ANI-5031,Anime Series #131,"Comedy, Slice of Life",TV,24,9.57,39075,2000,143
+ANI-5032,Anime Series #132,"Fantasy, Sci-Fi",TV,12,5.92,63378,4164,624
+ANI-5033,Anime Series #133,"Mystery, Psychological",Special,12,6.63,54870,1195,495
+ANI-5034,Anime Series #134,"Action, Adventure",TV,12,6.64,43251,2413,267
+ANI-5035,Anime Series #135,"Fantasy, Sci-Fi",TV,12,7.4,214907,13175,252
+ANI-5036,Anime Series #136,"Mystery, Psychological",TV,24,7.34,11534,148,1196
+ANI-5037,Anime Series #137,"Drama, Romance",TV,12,7.63,9991,167,878
+ANI-5038,Anime Series #138,"Action, Adventure",TV,12,7.35,98471,6372,960
+ANI-5039,Anime Series #139,"Drama, Romance",Movie,100,7.81,17682,721,818
+ANI-5040,Anime Series #140,"Drama, Romance",TV,12,6.67,20712,795,711
+ANI-5041,Anime Series #141,"Action, Adventure",Special,12,7.71,40277,2997,903
+ANI-5042,Anime Series #142,"Mystery, Psychological",TV,26,10.0,24504,1946,995
+ANI-5043,Anime Series #143,"Action, Adventure",TV,12,7.2,17458,1108,655
+ANI-5044,Anime Series #144,"Comedy, Slice of Life",TV,100,5.61,125051,8188,136
+ANI-5045,Anime Series #145,"Drama, Romance",Movie,12,6.51,7421,182,417
+ANI-5046,Anime Series #146,"Comedy, Slice of Life",TV,12,6.69,26400,619,664
+ANI-5047,Anime Series #147,"Action, Adventure",TV,12,6.23,648,50,1165
+ANI-5048,Anime Series #148,"Action, Adventure",Movie,24,7.33,82870,4860,1091
+ANI-5049,Anime Series #149,"Mystery, Psychological",Movie,100,8.08,9721,564,360
+ANI-5050,Anime Series #150,"Drama, Romance",Movie,26,5.77,74638,2241,218
+ANI-5051,Anime Series #151,"Fantasy, Sci-Fi",OVA,24,5.34,8543,615,553
+ANI-5052,Anime Series #152,"Action, Adventure",TV,12,9.92,27456,359,72
+ANI-5053,Anime Series #153,"Fantasy, Sci-Fi",TV,50,6.17,65631,1917,677
+ANI-5054,Anime Series #154,"Drama, Romance",Movie,26,8.75,16290,368,385
+ANI-5055,Anime Series #155,"Comedy, Slice of Life",TV,12,8.04,19337,1155,573
+ANI-5056,Anime Series #156,"Drama, Romance",TV,26,6.54,55529,3335,850
+ANI-5057,Anime Series #157,"Mystery, Psychological",Movie,50,6.33,10894,516,59
+ANI-5058,Anime Series #158,"Fantasy, Sci-Fi",TV,24,6.54,152103,1577,928
+ANI-5059,Anime Series #159,"Fantasy, Sci-Fi",TV,12,6.71,10961,780,640
+ANI-5060,Anime Series #160,"Comedy, Slice of Life",Movie,1,7.88,69813,5367,209
+ANI-5061,Anime Series #161,"Comedy, Slice of Life",OVA,12,5.67,81625,1972,885
+ANI-5062,Anime Series #162,"Action, Adventure",TV,24,8.61,23949,1651,888
+ANI-5063,Anime Series #163,"Drama, Romance",TV,12,6.5,8994,702,288
+ANI-5064,Anime Series #164,"Mystery, Psychological",TV,100,5.59,9570,314,690
+ANI-5065,Anime Series #165,"Action, Adventure",TV,12,7.4,212009,4866,706
+ANI-5066,Anime Series #166,"Drama, Romance",TV,24,9.84,65123,5107,657
+ANI-5067,Anime Series #167,"Comedy, Slice of Life",TV,12,6.28,30396,431,210
+ANI-5068,Anime Series #168,"Mystery, Psychological",Movie,24,7.34,15376,450,946
+ANI-5069,Anime Series #169,"Comedy, Slice of Life",TV,100,7.36,1454,90,507
+ANI-5070,Anime Series #170,"Comedy, Slice of Life",Special,100,9.27,56003,2980,311
+ANI-5071,Anime Series #171,"Fantasy, Sci-Fi",TV,12,6.17,157730,9135,436
+ANI-5072,Anime Series #172,"Drama, Romance",Special,12,8.23,6149,366,658
+ANI-5073,Anime Series #173,"Action, Adventure",TV,12,5.63,70721,4103,195
+ANI-5074,Anime Series #174,"Fantasy, Sci-Fi",TV,24,7.44,8816,299,102
+ANI-5075,Anime Series #175,"Drama, Romance",TV,26,8.01,79036,2513,984
+ANI-5076,Anime Series #176,"Drama, Romance",Movie,24,8.3,23647,945,715
+ANI-5077,Anime Series #177,"Drama, Romance",OVA,12,5.69,62750,4175,760
+ANI-5078,Anime Series #178,"Mystery, Psychological",Movie,12,4.99,130875,9904,513
+ANI-5079,Anime Series #179,"Fantasy, Sci-Fi",Movie,24,6.98,48897,2047,492
+ANI-5080,Anime Series #180,"Action, Adventure",TV,12,6.57,127225,2036,717
+ANI-5081,Anime Series #181,"Fantasy, Sci-Fi",TV,12,5.64,13895,1051,999
+ANI-5082,Anime Series #182,"Comedy, Slice of Life",TV,12,5.76,191640,2995,347
+ANI-5083,Anime Series #183,"Drama, Romance",TV,12,6.67,103618,2190,429
+ANI-5084,Anime Series #184,"Comedy, Slice of Life",Movie,12,9.08,6190,437,292
+ANI-5085,Anime Series #185,"Fantasy, Sci-Fi",OVA,100,5.85,27182,1321,568
+ANI-5086,Anime Series #186,"Action, Adventure",TV,12,8.18,131385,4557,87
+ANI-5087,Anime Series #187,"Comedy, Slice of Life",Movie,26,5.58,4566,343,255
+ANI-5088,Anime Series #188,"Comedy, Slice of Life",TV,24,6.37,30735,2373,239
+ANI-5089,Anime Series #189,"Mystery, Psychological",TV,24,5.51,64794,2148,756
+ANI-5090,Anime Series #190,"Fantasy, Sci-Fi",TV,12,9.59,2200,155,79
+ANI-5091,Anime Series #191,"Comedy, Slice of Life",TV,12,8.25,70384,4046,1179
+ANI-5092,Anime Series #192,"Fantasy, Sci-Fi",TV,12,7.97,22908,669,626
+ANI-5093,Anime Series #193,"Action, Adventure",TV,24,7.92,14842,1126,1076
+ANI-5094,Anime Series #194,"Comedy, Slice of Life",TV,24,6.31,43397,625,124
+ANI-5095,Anime Series #195,"Action, Adventure",TV,100,7.24,39799,1283,81
+ANI-5096,Anime Series #196,"Comedy, Slice of Life",TV,12,6.05,104049,3926,45
+ANI-5097,Anime Series #197,"Drama, Romance",TV,24,10.0,56851,3317,793
+ANI-5098,Anime Series #198,"Mystery, Psychological",Special,24,5.96,27897,354,151
+ANI-5099,Anime Series #199,"Mystery, Psychological",OVA,12,6.25,53010,3831,258
+ANI-5100,Anime Series #200,"Mystery, Psychological",Special,12,8.96,69844,3920,371
+ANI-5101,Anime Series #201,"Action, Adventure",TV,26,7.08,138992,4065,748
+ANI-5102,Anime Series #202,"Fantasy, Sci-Fi",Movie,12,7.86,61413,3444,253
+ANI-5103,Anime Series #203,"Mystery, Psychological",TV,50,7.11,39749,1891,439
+ANI-5104,Anime Series #204,"Comedy, Slice of Life",Movie,12,6.44,23838,799,4
+ANI-5105,Anime Series #205,"Comedy, Slice of Life",TV,12,6.44,111542,1338,359
+ANI-5106,Anime Series #206,"Drama, Romance",TV,24,8.15,79135,3844,505
+ANI-5107,Anime Series #207,"Action, Adventure",TV,12,7.45,4516,71,461
+ANI-5108,Anime Series #208,"Comedy, Slice of Life",TV,100,8.52,60622,4044,13
+ANI-5109,Anime Series #209,"Comedy, Slice of Life",TV,26,8.51,39190,634,767
+ANI-5110,Anime Series #210,"Drama, Romance",Special,24,7.83,5970,238,1174
+ANI-5111,Anime Series #211,"Drama, Romance",TV,1,8.35,42115,1702,432
+ANI-5112,Anime Series #212,"Fantasy, Sci-Fi",OVA,12,7.79,11190,547,622
+ANI-5113,Anime Series #213,"Fantasy, Sci-Fi",TV,12,7.62,62074,792,1172
+ANI-5114,Anime Series #214,"Fantasy, Sci-Fi",Movie,50,6.84,16818,408,1166
+ANI-5115,Anime Series #215,"Comedy, Slice of Life",Movie,12,5.34,8646,207,592
+ANI-5116,Anime Series #216,"Drama, Romance",TV,12,6.5,4776,248,352
+ANI-5117,Anime Series #217,"Action, Adventure",TV,12,8.79,34245,974,912
+ANI-5118,Anime Series #218,"Fantasy, Sci-Fi",Movie,12,7.52,11634,233,1016
+ANI-5119,Anime Series #219,"Mystery, Psychological",TV,24,6.76,97095,1095,484
+ANI-5120,Anime Series #220,"Comedy, Slice of Life",TV,12,8.52,650,44,306
+ANI-5121,Anime Series #221,"Action, Adventure",TV,12,6.71,93279,7276,722
+ANI-5122,Anime Series #222,"Comedy, Slice of Life",TV,12,7.98,37312,2209,708
+ANI-5123,Anime Series #223,"Fantasy, Sci-Fi",TV,24,8.66,128145,4983,245
+ANI-5124,Anime Series #224,"Comedy, Slice of Life",TV,50,7.87,11946,221,1024
+ANI-5125,Anime Series #225,"Fantasy, Sci-Fi",OVA,24,8.37,5894,254,161
+ANI-5126,Anime Series #226,"Comedy, Slice of Life",Movie,12,7.72,49535,2081,639
+ANI-5127,Anime Series #227,"Fantasy, Sci-Fi",TV,12,5.1,61832,2435,106
+ANI-5128,Anime Series #228,"Drama, Romance",TV,12,8.64,23807,868,688
+ANI-5129,Anime Series #229,"Drama, Romance",TV,12,8.08,1188,53,855
+ANI-5130,Anime Series #230,"Drama, Romance",TV,24,6.87,26624,402,220
+ANI-5131,Anime Series #231,"Drama, Romance",Movie,12,6.55,13814,175,935
+ANI-5132,Anime Series #232,"Drama, Romance",Movie,12,7.34,21844,316,566
+ANI-5133,Anime Series #233,"Mystery, Psychological",Movie,24,5.88,35837,860,1189
+ANI-5134,Anime Series #234,"Comedy, Slice of Life",Special,24,8.24,61090,1800,355
+ANI-5135,Anime Series #235,"Drama, Romance",TV,24,7.03,165647,3621,246
+ANI-5136,Anime Series #236,"Mystery, Psychological",Movie,24,6.21,8274,228,1085
+ANI-5137,Anime Series #237,"Mystery, Psychological",Movie,12,7.93,57456,1321,857
+ANI-5138,Anime Series #238,"Comedy, Slice of Life",Movie,12,7.72,13777,283,1159
+ANI-5139,Anime Series #239,"Comedy, Slice of Life",OVA,24,8.1,12968,395,980
+ANI-5140,Anime Series #240,"Fantasy, Sci-Fi",Movie,12,5.79,50695,1917,1057
+ANI-5141,Anime Series #241,"Fantasy, Sci-Fi",TV,12,8.01,75305,4676,214
+ANI-5142,Anime Series #242,"Drama, Romance",Special,26,9.17,190853,14674,511
+ANI-5143,Anime Series #243,"Action, Adventure",Movie,24,7.15,73730,5480,1195
+ANI-5144,Anime Series #244,"Fantasy, Sci-Fi",TV,12,7.08,9058,392,1099
+ANI-5145,Anime Series #245,"Action, Adventure",Movie,12,5.67,13270,561,920
+ANI-5146,Anime Series #246,"Fantasy, Sci-Fi",TV,24,7.29,72146,1356,97
+ANI-5147,Anime Series #247,"Mystery, Psychological",OVA,12,6.07,37931,2959,1143
+ANI-5148,Anime Series #248,"Mystery, Psychological",Special,12,8.48,18006,1138,1029
+ANI-5149,Anime Series #249,"Mystery, Psychological",TV,24,9.87,32412,2247,84
+ANI-5150,Anime Series #250,"Action, Adventure",OVA,12,9.9,123689,3264,546
+ANI-5151,Anime Series #251,"Drama, Romance",Movie,12,6.26,70947,2701,929
+ANI-5152,Anime Series #252,"Fantasy, Sci-Fi",Movie,24,6.39,30455,523,971
+ANI-5153,Anime Series #253,"Fantasy, Sci-Fi",TV,26,7.87,197505,14982,1138
+ANI-5154,Anime Series #254,"Action, Adventure",TV,26,6.95,79706,2391,608
+ANI-5155,Anime Series #255,"Mystery, Psychological",TV,26,7.22,794,41,257
+ANI-5156,Anime Series #256,"Drama, Romance",TV,12,9.9,6459,133,1065
+ANI-5157,Anime Series #257,"Fantasy, Sci-Fi",TV,26,6.01,40868,2705,954
+ANI-5158,Anime Series #258,"Drama, Romance",OVA,50,7.49,22035,507,930
+ANI-5159,Anime Series #259,"Drama, Romance",Special,24,7.62,84214,5613,278
+ANI-5160,Anime Series #260,"Comedy, Slice of Life",TV,12,8.36,113517,4327,459
+ANI-5161,Anime Series #261,"Drama, Romance",TV,24,6.25,14264,719,678
+ANI-5162,Anime Series #262,"Comedy, Slice of Life",OVA,100,8.83,72545,2095,201
+ANI-5163,Anime Series #263,"Action, Adventure",TV,1,7.49,38828,2787,277
+ANI-5164,Anime Series #264,"Mystery, Psychological",Special,12,6.29,25376,1603,1075
+ANI-5165,Anime Series #265,"Comedy, Slice of Life",Movie,1,7.0,77771,2706,824
+ANI-5166,Anime Series #266,"Drama, Romance",Movie,24,8.3,42111,2146,39
+ANI-5167,Anime Series #267,"Mystery, Psychological",TV,12,9.49,50931,969,871
+ANI-5168,Anime Series #268,"Drama, Romance",TV,1,6.81,3713,78,403
+ANI-5169,Anime Series #269,"Drama, Romance",TV,50,9.53,44579,2111,457
+ANI-5170,Anime Series #270,"Comedy, Slice of Life",TV,24,8.57,18384,1008,709
+ANI-5171,Anime Series #271,"Action, Adventure",Movie,50,6.64,34491,1690,609
+ANI-5172,Anime Series #272,"Drama, Romance",TV,24,7.86,13052,641,601
+ANI-5173,Anime Series #273,"Comedy, Slice of Life",TV,12,8.16,48157,2983,489
+ANI-5174,Anime Series #274,"Drama, Romance",OVA,100,6.94,8477,620,120
+ANI-5175,Anime Series #275,"Mystery, Psychological",TV,1,6.49,7056,262,547
+ANI-5176,Anime Series #276,"Action, Adventure",TV,12,7.05,10938,520,687
+ANI-5177,Anime Series #277,"Drama, Romance",OVA,12,6.77,85540,6202,469
+ANI-5178,Anime Series #278,"Action, Adventure",TV,12,7.5,2205,93,1028
+ANI-5179,Anime Series #279,"Action, Adventure",TV,26,9.6,65888,2711,696
+ANI-5180,Anime Series #280,"Mystery, Psychological",TV,26,7.7,3408,216,407
+ANI-5181,Anime Series #281,"Mystery, Psychological",TV,1,9.19,45306,3235,203
+ANI-5182,Anime Series #282,"Fantasy, Sci-Fi",TV,24,7.83,74763,4608,310
+ANI-5183,Anime Series #283,"Action, Adventure",TV,24,10.0,13637,231,861
+ANI-5184,Anime Series #284,"Drama, Romance",TV,50,6.31,11404,485,412
+ANI-5185,Anime Series #285,"Mystery, Psychological",TV,12,4.93,17566,436,551
+ANI-5186,Anime Series #286,"Drama, Romance",TV,24,7.5,60634,1953,23
+ANI-5187,Anime Series #287,"Action, Adventure",Movie,24,7.64,15206,651,122
+ANI-5188,Anime Series #288,"Mystery, Psychological",Movie,24,8.93,35334,901,240
+ANI-5189,Anime Series #289,"Fantasy, Sci-Fi",Movie,24,9.29,7720,356,702
+ANI-5190,Anime Series #290,"Action, Adventure",TV,26,,31420,1729,663
+ANI-5191,Anime Series #291,"Drama, Romance",TV,12,7.01,49505,3526,593
+ANI-5192,Anime Series #292,"Fantasy, Sci-Fi",Movie,12,7.35,4226,104,646
+ANI-5193,Anime Series #293,"Action, Adventure",Movie,26,5.93,84984,2697,649
+ANI-5194,Anime Series #294,"Mystery, Psychological",OVA,12,7.05,139078,5341,659
+ANI-5195,Anime Series #295,"Action, Adventure",TV,12,8.4,11255,289,769
+ANI-5196,Anime Series #296,"Comedy, Slice of Life",TV,12,8.48,71737,2384,862
+ANI-5197,Anime Series #297,"Drama, Romance",Movie,12,7.61,19305,1386,943
+ANI-5198,Anime Series #298,"Mystery, Psychological",Special,26,9.07,56962,1122,618
+ANI-5199,Anime Series #299,"Mystery, Psychological",Special,24,7.58,18812,772,610
+ANI-5200,Anime Series #300,"Comedy, Slice of Life",Special,24,8.61,99649,3165,548
+ANI-5201,Anime Series #301,"Fantasy, Sci-Fi",OVA,24,6.28,21817,336,833
+ANI-5202,Anime Series #302,"Mystery, Psychological",Movie,12,6.35,94967,1588,865
+ANI-5203,Anime Series #303,"Fantasy, Sci-Fi",TV,12,9.48,73152,4750,307
+ANI-5204,Anime Series #304,"Fantasy, Sci-Fi",Movie,50,6.66,11427,796,638
+ANI-5205,Anime Series #305,"Fantasy, Sci-Fi",TV,12,8.32,9036,559,296
+ANI-5206,Anime Series #306,"Action, Adventure",TV,12,6.62,76128,3634,895
+ANI-5207,Anime Series #307,"Comedy, Slice of Life",Movie,24,7.63,25239,1617,719
+ANI-5208,Anime Series #308,"Drama, Romance",Movie,12,7.05,149683,3089,785
+ANI-5209,Anime Series #309,"Comedy, Slice of Life",Movie,12,7.99,143689,9284,279
+ANI-5210,Anime Series #310,"Mystery, Psychological",TV,12,7.98,59623,2363,1156
+ANI-5211,Anime Series #311,"Comedy, Slice of Life",TV,1,6.47,35215,2201,348
+ANI-5212,Anime Series #312,"Drama, Romance",Special,24,8.02,11343,294,550
+ANI-5213,Anime Series #313,"Action, Adventure",Movie,12,5.94,107520,7341,256
+ANI-5214,Anime Series #314,"Mystery, Psychological",TV,26,9.1,4777,237,379
+ANI-5215,Anime Series #315,"Action, Adventure",TV,50,7.6,23629,248,447
+ANI-5216,Anime Series #316,"Mystery, Psychological",Special,24,3.87,19725,914,741
+ANI-5217,Anime Series #317,"Drama, Romance",TV,12,5.76,159517,5059,275
+ANI-5218,Anime Series #318,"Action, Adventure",TV,12,,6784,95,574
+ANI-5219,Anime Series #319,"Drama, Romance",TV,12,8.26,110931,4582,178
+ANI-5220,Anime Series #320,"Drama, Romance",TV,24,6.77,30980,985,679
+ANI-5221,Anime Series #321,"Comedy, Slice of Life",TV,24,7.37,2933,71,852
+ANI-5222,Anime Series #322,"Mystery, Psychological",TV,12,8.0,65757,2264,194
+ANI-5223,Anime Series #323,"Fantasy, Sci-Fi",TV,24,8.64,5816,131,1014
+ANI-5224,Anime Series #324,"Fantasy, Sci-Fi",TV,24,8.2,14025,434,378
+ANI-5225,Anime Series #325,"Action, Adventure",TV,100,6.58,80904,1462,243
+ANI-5226,Anime Series #326,"Drama, Romance",Special,24,8.7,8905,141,160
+ANI-5227,Anime Series #327,"Comedy, Slice of Life",Movie,24,4.81,20186,1487,291
+ANI-5228,Anime Series #328,"Mystery, Psychological",TV,26,6.89,22892,1675,251
+ANI-5229,Anime Series #329,"Action, Adventure",TV,12,7.88,44934,3053,1111
+ANI-5230,Anime Series #330,"Drama, Romance",TV,12,5.87,78516,2051,383
+ANI-5231,Anime Series #331,"Fantasy, Sci-Fi",Movie,26,7.26,13620,828,952
+ANI-5232,Anime Series #332,"Fantasy, Sci-Fi",TV,12,7.81,12019,616,317
+ANI-5233,Anime Series #333,"Mystery, Psychological",Special,12,6.35,13045,177,682
+ANI-5234,Anime Series #334,"Mystery, Psychological",Movie,50,7.41,24531,1790,868
+ANI-5235,Anime Series #335,"Mystery, Psychological",Special,24,5.85,38796,3098,49
+ANI-5236,Anime Series #336,"Action, Adventure",TV,26,8.31,1176,70,558
+ANI-5237,Anime Series #337,"Mystery, Psychological",OVA,26,7.79,76274,1998,62
+ANI-5238,Anime Series #338,"Action, Adventure",Movie,12,8.01,131170,6402,937
+ANI-5239,Anime Series #339,"Comedy, Slice of Life",TV,24,7.12,93241,1646,226
+ANI-5240,Anime Series #340,"Drama, Romance",TV,1,5.37,2394,74,1161
+ANI-5241,Anime Series #341,"Fantasy, Sci-Fi",TV,24,7.05,37669,2267,540
+ANI-5242,Anime Series #342,"Action, Adventure",TV,24,9.1,84607,2629,565
+ANI-5243,Anime Series #343,"Drama, Romance",Movie,24,8.32,21588,438,651
+ANI-5244,Anime Series #344,"Mystery, Psychological",Movie,12,9.12,114169,1201,155
+ANI-5245,Anime Series #345,"Fantasy, Sci-Fi",TV,12,7.26,109465,5481,662
+ANI-5246,Anime Series #346,"Action, Adventure",TV,12,6.44,8140,633,107
+ANI-5247,Anime Series #347,"Mystery, Psychological",Special,24,7.85,34524,1515,76
+ANI-5248,Anime Series #348,"Drama, Romance",TV,24,6.99,1800,44,1026
+ANI-5249,Anime Series #349,"Comedy, Slice of Life",TV,1,6.59,17054,723,231
+ANI-5250,Anime Series #350,"Drama, Romance",TV,12,5.29,84031,4381,783
+ANI-5251,Anime Series #351,"Action, Adventure",Special,12,7.57,185225,12242,560
+ANI-5252,Anime Series #352,"Comedy, Slice of Life",Movie,24,8.23,122778,5118,632
+ANI-5253,Anime Series #353,"Comedy, Slice of Life",TV,1,,2675,59,166
+ANI-5254,Anime Series #354,"Mystery, Psychological",TV,24,8.84,131180,3038,1134
+ANI-5255,Anime Series #355,"Drama, Romance",TV,26,7.47,86980,6347,585
+ANI-5256,Anime Series #356,"Action, Adventure",TV,24,7.32,101635,2697,528
+ANI-5257,Anime Series #357,"Comedy, Slice of Life",Movie,24,5.86,123653,7538,1074
+ANI-5258,Anime Series #358,"Mystery, Psychological",TV,12,7.78,33989,979,714
+ANI-5259,Anime Series #359,"Comedy, Slice of Life",TV,12,5.93,12363,747,1182
+ANI-5260,Anime Series #360,"Drama, Romance",TV,12,6.15,1562,24,880
+ANI-5261,Anime Series #361,"Fantasy, Sci-Fi",TV,12,5.36,1691,41,419
+ANI-5262,Anime Series #362,"Action, Adventure",Special,12,10.0,51932,2005,238
+ANI-5263,Anime Series #363,"Fantasy, Sci-Fi",TV,24,7.15,21070,970,1050
+ANI-5264,Anime Series #364,"Drama, Romance",TV,12,6.53,34748,1205,207
+ANI-5265,Anime Series #365,"Fantasy, Sci-Fi",OVA,12,7.15,7539,378,298
+ANI-5266,Anime Series #366,"Drama, Romance",TV,24,6.65,185981,6095,443
+ANI-5267,Anime Series #367,"Drama, Romance",TV,12,7.0,7459,428,704
+ANI-5268,Anime Series #368,"Mystery, Psychological",TV,12,7.61,29921,1369,1066
+ANI-5269,Anime Series #369,"Fantasy, Sci-Fi",TV,1,6.75,29791,1768,142
+ANI-5270,Anime Series #370,"Comedy, Slice of Life",Special,12,7.34,933,37,613
+ANI-5271,Anime Series #371,"Drama, Romance",TV,12,9.77,55600,3967,1169
+ANI-5272,Anime Series #372,"Fantasy, Sci-Fi",TV,12,5.18,39132,1438,183
+ANI-5273,Anime Series #373,"Comedy, Slice of Life",OVA,26,5.95,34907,1101,51
+ANI-5274,Anime Series #374,"Action, Adventure",TV,24,7.74,85710,4199,764
+ANI-5275,Anime Series #375,"Comedy, Slice of Life",Special,12,8.71,14296,652,834
+ANI-5276,Anime Series #376,"Fantasy, Sci-Fi",TV,24,10.0,99198,4589,437
+ANI-5277,Anime Series #377,"Fantasy, Sci-Fi",TV,12,7.66,100542,6608,856
+ANI-5278,Anime Series #378,"Comedy, Slice of Life",TV,24,5.86,88183,4515,1176
+ANI-5279,Anime Series #379,"Comedy, Slice of Life",TV,24,8.86,21381,1538,913
+ANI-5280,Anime Series #380,"Drama, Romance",TV,12,7.34,9370,499,144
+ANI-5281,Anime Series #381,"Fantasy, Sci-Fi",TV,24,7.29,32734,377,444
+ANI-5282,Anime Series #382,"Drama, Romance",TV,24,5.06,15544,1102,1001
+ANI-5283,Anime Series #383,"Drama, Romance",TV,100,8.49,3179,218,204
+ANI-5284,Anime Series #384,"Action, Adventure",TV,1,6.19,16888,226,421
+ANI-5285,Anime Series #385,"Fantasy, Sci-Fi",TV,24,7.82,32161,603,438
+ANI-5286,Anime Series #386,"Drama, Romance",TV,50,7.27,6480,317,794
+ANI-5287,Anime Series #387,"Action, Adventure",TV,24,7.42,144919,1883,163
+ANI-5288,Anime Series #388,"Drama, Romance",TV,50,7.26,53870,2089,791
+ANI-5289,Anime Series #389,"Drama, Romance",OVA,12,6.37,7828,612,838
+ANI-5290,Anime Series #390,"Fantasy, Sci-Fi",TV,24,6.27,84082,1857,147
+ANI-5291,Anime Series #391,"Comedy, Slice of Life",TV,26,8.24,132115,3227,630
+ANI-5292,Anime Series #392,"Comedy, Slice of Life",TV,100,7.18,15743,902,197
+ANI-5293,Anime Series #393,"Fantasy, Sci-Fi",TV,12,6.48,8230,107,701
+ANI-5294,Anime Series #394,"Comedy, Slice of Life",Movie,12,6.64,19965,1346,1079
+ANI-5295,Anime Series #395,"Mystery, Psychological",TV,100,7.96,89763,2148,329
+ANI-5296,Anime Series #396,"Comedy, Slice of Life",TV,24,6.45,10124,477,152
+ANI-5297,Anime Series #397,"Drama, Romance",TV,1,8.96,76058,2085,1037
+ANI-5298,Anime Series #398,"Drama, Romance",Special,26,7.03,63485,3562,74
+ANI-5299,Anime Series #399,"Action, Adventure",TV,26,6.82,53186,2718,92
+ANI-5300,Anime Series #400,"Fantasy, Sci-Fi",Movie,12,7.88,28897,2203,376
+ANI-5301,Anime Series #401,"Action, Adventure",TV,12,6.89,23346,961,790
+ANI-5302,Anime Series #402,"Drama, Romance",TV,24,7.62,4955,353,1084
+ANI-5303,Anime Series #403,"Drama, Romance",TV,50,7.14,22608,1137,808
+ANI-5304,Anime Series #404,"Action, Adventure",TV,24,5.29,46545,3444,846
+ANI-5305,Anime Series #405,"Mystery, Psychological",TV,24,6.03,114741,3491,101
+ANI-5306,Anime Series #406,"Comedy, Slice of Life",TV,26,7.52,90025,4364,61
+ANI-5307,Anime Series #407,"Mystery, Psychological",TV,24,6.7,2137,79,506
+ANI-5308,Anime Series #408,"Mystery, Psychological",TV,100,9.46,7975,116,490
+ANI-5309,Anime Series #409,"Mystery, Psychological",TV,12,6.33,94854,4761,736
+ANI-5310,Anime Series #410,"Mystery, Psychological",TV,12,5.76,140605,9223,703
+ANI-5311,Anime Series #411,"Comedy, Slice of Life",TV,24,7.24,3371,164,478
+ANI-5312,Anime Series #412,"Fantasy, Sci-Fi",TV,12,7.48,60907,1800,776
+ANI-5313,Anime Series #413,"Action, Adventure",TV,1,8.17,23264,662,890
+ANI-5314,Anime Series #414,"Mystery, Psychological",TV,12,4.44,23150,616,1153
+ANI-5315,Anime Series #415,"Mystery, Psychological",Movie,100,8.86,51954,4082,877
+ANI-5316,Anime Series #416,"Action, Adventure",TV,1,5.76,83593,3171,1198
+ANI-5317,Anime Series #417,"Action, Adventure",Special,12,8.4,16567,533,994
+ANI-5318,Anime Series #418,"Fantasy, Sci-Fi",OVA,50,9.35,61599,2420,534
+ANI-5319,Anime Series #419,"Drama, Romance",Movie,24,8.02,51013,923,698
+ANI-5320,Anime Series #420,"Fantasy, Sci-Fi",TV,26,5.94,36920,875,988
+ANI-5321,Anime Series #421,"Drama, Romance",Movie,12,6.99,46618,2126,666
+ANI-5322,Anime Series #422,"Comedy, Slice of Life",Movie,1,8.03,1410,92,620
+ANI-5323,Anime Series #423,"Fantasy, Sci-Fi",Movie,24,7.24,703,50,750
+ANI-5324,Anime Series #424,"Comedy, Slice of Life",TV,50,6.05,40474,2858,180
+ANI-5325,Anime Series #425,"Action, Adventure",Movie,24,7.31,37628,2864,223
+ANI-5326,Anime Series #426,"Fantasy, Sci-Fi",Movie,24,6.63,4200,78,1175
+ANI-5327,Anime Series #427,"Action, Adventure",TV,12,7.86,34366,442,1119
+ANI-5328,Anime Series #428,"Mystery, Psychological",Movie,12,6.03,71343,1241,54
+ANI-5329,Anime Series #429,"Action, Adventure",TV,24,5.07,39457,2053,3
+ANI-5330,Anime Series #430,"Mystery, Psychological",Movie,50,6.08,36950,1807,1
+ANI-5331,Anime Series #431,"Drama, Romance",Movie,12,5.32,63776,3634,67
+ANI-5332,Anime Series #432,"Mystery, Psychological",TV,1,6.51,9927,357,90
+ANI-5333,Anime Series #433,"Drama, Romance",OVA,50,7.94,31076,1162,559
+ANI-5334,Anime Series #434,"Mystery, Psychological",OVA,12,6.77,8511,410,956
+ANI-5335,Anime Series #435,"Mystery, Psychological",TV,12,7.17,37600,584,397
+ANI-5336,Anime Series #436,"Comedy, Slice of Life",TV,100,6.09,45317,2990,1064
+ANI-5337,Anime Series #437,"Comedy, Slice of Life",Movie,12,7.22,6986,521,332
+ANI-5338,Anime Series #438,"Action, Adventure",TV,12,6.15,4425,164,758
+ANI-5339,Anime Series #439,"Comedy, Slice of Life",TV,12,5.89,9620,594,299
+ANI-5340,Anime Series #440,"Drama, Romance",Movie,1,6.95,44635,2161,427
+ANI-5341,Anime Series #441,"Comedy, Slice of Life",Special,24,,11012,292,33
+ANI-5342,Anime Series #442,"Action, Adventure",TV,12,4.1,16595,244,413
+ANI-5343,Anime Series #443,"Fantasy, Sci-Fi",TV,12,7.11,61124,1663,78
+ANI-5344,Anime Series #444,"Drama, Romance",TV,12,6.13,14773,773,1135
+ANI-5345,Anime Series #445,"Fantasy, Sci-Fi",Movie,12,6.05,25835,331,1043
+ANI-5346,Anime Series #446,"Drama, Romance",OVA,50,8.74,132644,9090,766
+ANI-5347,Anime Series #447,"Action, Adventure",TV,24,8.14,87647,6829,787
+ANI-5348,Anime Series #448,"Comedy, Slice of Life",TV,24,7.61,15250,241,114
+ANI-5349,Anime Series #449,"Fantasy, Sci-Fi",TV,12,7.27,46012,1254,906
+ANI-5350,Anime Series #450,"Fantasy, Sci-Fi",Movie,24,7.87,55301,3168,128
+ANI-5351,Anime Series #451,"Comedy, Slice of Life",TV,12,6.77,115750,7688,925
+ANI-5352,Anime Series #452,"Action, Adventure",OVA,26,7.29,40144,1373,319
+ANI-5353,Anime Series #453,"Comedy, Slice of Life",TV,26,6.76,41695,1920,103
+ANI-5354,Anime Series #454,"Mystery, Psychological",OVA,12,,110162,7978,344
+ANI-5355,Anime Series #455,"Mystery, Psychological",TV,12,7.51,3295,121,135
+ANI-5356,Anime Series #456,"Mystery, Psychological",Movie,26,7.45,49962,784,313
+ANI-5357,Anime Series #457,"Fantasy, Sci-Fi",Special,12,6.8,27448,2186,926
+ANI-5358,Anime Series #458,"Fantasy, Sci-Fi",Special,24,7.96,120766,2731,1048
+ANI-5359,Anime Series #459,"Action, Adventure",Special,24,6.98,162123,2174,187
+ANI-5360,Anime Series #460,"Drama, Romance",TV,12,6.95,9831,380,109
+ANI-5361,Anime Series #461,"Comedy, Slice of Life",TV,24,5.2,17027,315,944
+ANI-5362,Anime Series #462,"Drama, Romance",TV,24,6.26,16472,1293,1184
+ANI-5363,Anime Series #463,"Fantasy, Sci-Fi",TV,24,8.15,5802,212,579
+ANI-5364,Anime Series #464,"Comedy, Slice of Life",TV,12,8.06,33480,2270,404
+ANI-5365,Anime Series #465,"Fantasy, Sci-Fi",Movie,26,7.18,36482,815,408
+ANI-5366,Anime Series #466,"Action, Adventure",Movie,12,6.59,43046,848,538
+ANI-5367,Anime Series #467,"Comedy, Slice of Life",TV,12,7.37,54877,3042,989
+ANI-5368,Anime Series #468,"Fantasy, Sci-Fi",Movie,12,4.57,3749,276,27
+ANI-5369,Anime Series #469,"Mystery, Psychological",TV,26,7.35,49207,886,211
+ANI-5370,Anime Series #470,"Mystery, Psychological",OVA,12,5.83,123059,6306,959
+ANI-5371,Anime Series #471,"Fantasy, Sci-Fi",TV,26,7.1,30847,491,991
+ANI-5372,Anime Series #472,"Drama, Romance",TV,24,7.43,6142,410,907
+ANI-5373,Anime Series #473,"Action, Adventure",TV,50,6.82,4993,367,812
+ANI-5374,Anime Series #474,"Action, Adventure",OVA,24,8.02,17047,920,537
+ANI-5375,Anime Series #475,"Fantasy, Sci-Fi",Special,24,6.5,70322,4091,138
+ANI-5376,Anime Series #476,"Action, Adventure",TV,26,6.4,15622,216,476
+ANI-5377,Anime Series #477,"Comedy, Slice of Life",TV,24,7.89,84689,1279,820
+ANI-5378,Anime Series #478,"Action, Adventure",Movie,26,6.8,86145,1944,199
+ANI-5379,Anime Series #479,"Mystery, Psychological",TV,12,8.68,31042,905,978
+ANI-5380,Anime Series #480,"Fantasy, Sci-Fi",TV,24,7.21,18390,1162,98
+ANI-5381,Anime Series #481,"Comedy, Slice of Life",TV,26,7.81,46023,1863,699
+ANI-5382,Anime Series #482,"Action, Adventure",Movie,26,8.22,83676,1295,1025
+ANI-5383,Anime Series #483,"Mystery, Psychological",TV,26,7.12,3837,267,17
+ANI-5384,Anime Series #484,"Drama, Romance",TV,24,5.52,153833,12240,691
+ANI-5385,Anime Series #485,"Action, Adventure",TV,1,7.89,52408,2193,434
+ANI-5386,Anime Series #486,"Mystery, Psychological",Special,12,8.51,25887,1186,1010
+ANI-5387,Anime Series #487,"Mystery, Psychological",TV,12,6.91,35762,554,71
+ANI-5388,Anime Series #488,"Mystery, Psychological",Movie,12,8.29,24854,914,414
+ANI-5389,Anime Series #489,"Mystery, Psychological",TV,1,5.92,27103,976,433
+ANI-5390,Anime Series #490,"Drama, Romance",TV,12,7.36,45769,3551,272
+ANI-5391,Anime Series #491,"Fantasy, Sci-Fi",Special,26,6.89,3606,202,57
+ANI-5392,Anime Series #492,"Mystery, Psychological",TV,12,5.47,10141,656,351
+ANI-5393,Anime Series #493,"Fantasy, Sci-Fi",OVA,12,7.64,13376,253,841
+ANI-5394,Anime Series #494,"Drama, Romance",Special,24,6.22,26671,1045,1077
+ANI-5395,Anime Series #495,"Drama, Romance",Movie,24,7.61,23685,554,368
+ANI-5396,Anime Series #496,"Comedy, Slice of Life",TV,12,,64543,4531,34
+ANI-5397,Anime Series #497,"Comedy, Slice of Life",OVA,24,5.36,15499,320,1018
+ANI-5398,Anime Series #498,"Mystery, Psychological",OVA,12,6.41,3438,139,1013
+ANI-5399,Anime Series #499,"Fantasy, Sci-Fi",Special,24,8.34,3351,46,543
+ANI-5400,Anime Series #500,"Drama, Romance",OVA,12,7.02,1068,58,1109
+ANI-5401,Anime Series #501,"Action, Adventure",TV,24,7.24,2438,106,526
+ANI-5402,Anime Series #502,"Comedy, Slice of Life",Movie,12,7.35,98329,4410,289
+ANI-5403,Anime Series #503,"Comedy, Slice of Life",TV,24,7.31,60241,1030,1132
+ANI-5404,Anime Series #504,"Action, Adventure",TV,12,9.26,275719,12677,500
+ANI-5405,Anime Series #505,"Fantasy, Sci-Fi",Movie,12,7.15,1526,75,612
+ANI-5406,Anime Series #506,"Fantasy, Sci-Fi",Movie,12,5.1,95024,7354,300
+ANI-5407,Anime Series #507,"Fantasy, Sci-Fi",Movie,26,6.79,60045,740,644
+ANI-5408,Anime Series #508,"Mystery, Psychological",OVA,24,7.28,51630,3851,100
+ANI-5409,Anime Series #509,"Mystery, Psychological",TV,100,,22544,982,1160
+ANI-5410,Anime Series #510,"Action, Adventure",TV,100,6.94,24138,596,996
+ANI-5411,Anime Series #511,"Drama, Romance",TV,24,6.95,93897,5313,529
+ANI-5412,Anime Series #512,"Action, Adventure",TV,26,9.15,62998,2910,448
+ANI-5413,Anime Series #513,"Drama, Romance",TV,24,6.45,55981,1448,1089
+ANI-5414,Anime Series #514,"Action, Adventure",Special,24,8.24,2056,110,386
+ANI-5415,Anime Series #515,"Mystery, Psychological",TV,24,7.04,10686,460,1188
+ANI-5416,Anime Series #516,"Fantasy, Sci-Fi",TV,12,8.15,164836,9598,1053
+ANI-5417,Anime Series #517,"Comedy, Slice of Life",TV,12,8.74,30790,1793,854
+ANI-5418,Anime Series #518,"Action, Adventure",Movie,24,7.62,76524,3297,1002
+ANI-5419,Anime Series #519,"Action, Adventure",TV,24,7.14,25159,939,316
+ANI-5420,Anime Series #520,"Comedy, Slice of Life",TV,12,8.46,72764,1049,263
+ANI-5421,Anime Series #521,"Action, Adventure",TV,12,5.59,6846,305,491
+ANI-5422,Anime Series #522,"Fantasy, Sci-Fi",TV,24,7.39,2652,71,409
+ANI-5423,Anime Series #523,"Comedy, Slice of Life",Movie,1,5.83,31884,437,1062
+ANI-5424,Anime Series #524,"Comedy, Slice of Life",TV,12,8.08,45281,1500,1133
+ANI-5425,Anime Series #525,"Fantasy, Sci-Fi",TV,24,7.31,20056,323,320
+ANI-5426,Anime Series #526,"Fantasy, Sci-Fi",Special,1,7.12,63439,3208,168
+ANI-5427,Anime Series #527,"Comedy, Slice of Life",TV,12,6.79,34741,1572,830
+ANI-5428,Anime Series #528,"Fantasy, Sci-Fi",TV,50,,132274,8659,955
+ANI-5429,Anime Series #529,"Fantasy, Sci-Fi",Movie,50,5.23,4941,141,921
+ANI-5430,Anime Series #530,"Fantasy, Sci-Fi",Movie,12,9.29,3944,142,141
+ANI-5431,Anime Series #531,"Comedy, Slice of Life",TV,12,7.04,118258,6885,892
+ANI-5432,Anime Series #532,"Action, Adventure",Movie,12,5.77,55798,4436,1181
+ANI-5433,Anime Series #533,"Drama, Romance",TV,12,4.31,56102,4111,357
+ANI-5434,Anime Series #534,"Comedy, Slice of Life",Special,1,7.01,1897,88,718
+ANI-5435,Anime Series #535,"Drama, Romance",Movie,12,7.45,139269,8001,781
+ANI-5436,Anime Series #536,"Fantasy, Sci-Fi",TV,100,7.54,74382,3513,965
+ANI-5437,Anime Series #537,"Fantasy, Sci-Fi",TV,12,5.6,72762,2942,623
+ANI-5438,Anime Series #538,"Action, Adventure",TV,1,5.85,121980,6362,867
+ANI-5439,Anime Series #539,"Fantasy, Sci-Fi",Movie,12,8.69,43655,1617,485
+ANI-5440,Anime Series #540,"Drama, Romance",OVA,24,5.49,25598,758,564
+ANI-5441,Anime Series #541,"Comedy, Slice of Life",Special,12,7.32,33261,1975,127
+ANI-5442,Anime Series #542,"Comedy, Slice of Life",TV,12,6.78,75583,5369,192
+ANI-5443,Anime Series #543,"Action, Adventure",OVA,12,6.61,73708,2223,914
+ANI-5444,Anime Series #544,"Drama, Romance",TV,12,6.9,47527,2827,370
+ANI-5445,Anime Series #545,"Fantasy, Sci-Fi",TV,12,6.61,12800,516,598
+ANI-5446,Anime Series #546,"Mystery, Psychological",Movie,24,6.57,85930,2676,628
+ANI-5447,Anime Series #547,"Action, Adventure",TV,12,8.3,52598,2812,80
+ANI-5448,Anime Series #548,"Action, Adventure",TV,24,6.76,13004,985,525
+ANI-5449,Anime Series #549,"Mystery, Psychological",OVA,24,5.86,33258,1151,602
+ANI-5450,Anime Series #550,"Comedy, Slice of Life",TV,26,7.11,294519,18602,969
+ANI-5451,Anime Series #551,"Comedy, Slice of Life",Special,50,6.04,20403,653,516
+ANI-5452,Anime Series #552,"Comedy, Slice of Life",TV,26,6.0,6696,443,9
+ANI-5453,Anime Series #553,"Mystery, Psychological",TV,12,8.8,1595,100,633
+ANI-5454,Anime Series #554,"Fantasy, Sci-Fi",TV,12,7.0,10705,680,1199
+ANI-5455,Anime Series #555,"Fantasy, Sci-Fi",TV,24,5.79,10849,866,174
+ANI-5456,Anime Series #556,"Drama, Romance",Special,24,7.09,98120,1946,836
+ANI-5457,Anime Series #557,"Drama, Romance",TV,12,7.27,8989,334,1052
+ANI-5458,Anime Series #558,"Comedy, Slice of Life",TV,24,6.97,99761,5402,849
+ANI-5459,Anime Series #559,"Mystery, Psychological",TV,12,6.66,5035,258,463
+ANI-5460,Anime Series #560,"Action, Adventure",Movie,12,5.67,119066,7696,445
+ANI-5461,Anime Series #561,"Fantasy, Sci-Fi",TV,24,6.74,15309,203,733
+ANI-5462,Anime Series #562,"Mystery, Psychological",Movie,12,6.33,47772,2835,1145
+ANI-5463,Anime Series #563,"Drama, Romance",Movie,12,7.07,9201,567,725
+ANI-5464,Anime Series #564,"Fantasy, Sci-Fi",TV,12,7.66,25219,360,694
+ANI-5465,Anime Series #565,"Fantasy, Sci-Fi",Special,12,9.13,4983,237,669
+ANI-5466,Anime Series #566,"Mystery, Psychological",OVA,12,8.05,43818,1189,713
+ANI-5467,Anime Series #567,"Drama, Romance",TV,12,4.21,21723,1436,1061
+ANI-5468,Anime Series #568,"Mystery, Psychological",Movie,12,7.44,96077,1294,322
+ANI-5469,Anime Series #569,"Action, Adventure",Movie,12,8.87,10533,213,305
+ANI-5470,Anime Series #570,"Fantasy, Sci-Fi",OVA,12,7.04,16924,292,509
+ANI-5471,Anime Series #571,"Mystery, Psychological",TV,12,8.91,10255,149,514
+ANI-5472,Anime Series #572,"Mystery, Psychological",Movie,12,5.98,41985,2183,382
+ANI-5473,Anime Series #573,"Action, Adventure",TV,26,,6424,454,350
+ANI-5474,Anime Series #574,"Mystery, Psychological",TV,24,,10996,503,544
+ANI-5475,Anime Series #575,"Fantasy, Sci-Fi",Movie,24,7.04,57236,1416,391
+ANI-5476,Anime Series #576,"Comedy, Slice of Life",OVA,24,8.12,4366,148,732
+ANI-5477,Anime Series #577,"Comedy, Slice of Life",TV,12,7.2,68465,2411,1003
+ANI-5478,Anime Series #578,"Drama, Romance",TV,1,7.08,6009,250,337
+ANI-5479,Anime Series #579,"Action, Adventure",Movie,12,9.92,44532,1756,182
+ANI-5480,Anime Series #580,"Drama, Romance",Special,12,6.34,306680,17474,521
+ANI-5481,Anime Series #581,"Comedy, Slice of Life",TV,12,8.62,10051,339,425
+ANI-5482,Anime Series #582,"Action, Adventure",TV,50,7.66,15628,881,606
+ANI-5483,Anime Series #583,"Mystery, Psychological",OVA,100,6.8,114848,5544,763
+ANI-5484,Anime Series #584,"Mystery, Psychological",TV,26,7.48,49713,665,29
+ANI-5485,Anime Series #585,"Fantasy, Sci-Fi",TV,12,6.3,34416,2559,806
+ANI-5486,Anime Series #586,"Comedy, Slice of Life",Movie,100,7.29,41857,939,230
+ANI-5487,Anime Series #587,"Mystery, Psychological",TV,12,7.2,18013,749,1101
+ANI-5488,Anime Series #588,"Action, Adventure",TV,24,7.72,97162,7416,607
+ANI-5489,Anime Series #589,"Mystery, Psychological",OVA,100,7.07,68877,1881,341
+ANI-5490,Anime Series #590,"Drama, Romance",TV,26,9.03,51926,599,170
+ANI-5491,Anime Series #591,"Drama, Romance",TV,12,6.23,134723,5968,480
+ANI-5492,Anime Series #592,"Drama, Romance",TV,24,6.44,43650,1120,1168
+ANI-5493,Anime Series #593,"Drama, Romance",TV,12,7.46,36359,1844,916
+ANI-5494,Anime Series #594,"Drama, Romance",TV,12,6.31,186350,12522,742
+ANI-5495,Anime Series #595,"Fantasy, Sci-Fi",TV,24,7.94,12034,550,467
+ANI-5496,Anime Series #596,"Drama, Romance",OVA,12,8.65,8155,449,440
+ANI-5497,Anime Series #597,"Fantasy, Sci-Fi",Movie,12,6.63,9353,529,493
+ANI-5498,Anime Series #598,"Fantasy, Sci-Fi",TV,24,7.3,228043,15378,1122
+ANI-5499,Anime Series #599,"Mystery, Psychological",TV,24,7.92,53313,3100,643
+ANI-5500,Anime Series #600,"Action, Adventure",TV,12,8.17,18758,1469,95
+ANI-5501,Anime Series #601,"Drama, Romance",Movie,12,10.0,14816,621,35
+ANI-5502,Anime Series #602,"Action, Adventure",TV,50,5.71,3415,46,367
+ANI-5503,Anime Series #603,"Comedy, Slice of Life",Movie,12,8.84,7575,284,840
+ANI-5504,Anime Series #604,"Fantasy, Sci-Fi",TV,24,6.49,119892,8247,771
+ANI-5505,Anime Series #605,"Comedy, Slice of Life",Special,1,6.54,69285,1338,580
+ANI-5506,Anime Series #606,"Fantasy, Sci-Fi",TV,24,7.36,142487,8765,1097
+ANI-5507,Anime Series #607,"Drama, Romance",OVA,12,7.27,28059,1332,112
+ANI-5508,Anime Series #608,"Comedy, Slice of Life",Movie,12,8.58,46469,3394,167
+ANI-5509,Anime Series #609,"Mystery, Psychological",TV,24,5.58,33550,2052,473
+ANI-5510,Anime Series #610,"Comedy, Slice of Life",Movie,26,3.93,107093,6022,487
+ANI-5511,Anime Series #611,"Fantasy, Sci-Fi",OVA,24,9.33,238194,17169,753
+ANI-5512,Anime Series #612,"Fantasy, Sci-Fi",Movie,12,5.62,135485,9968,354
+ANI-5513,Anime Series #613,"Action, Adventure",Movie,12,8.31,46072,1702,599
+ANI-5514,Anime Series #614,"Comedy, Slice of Life",TV,12,8.73,3689,276,158
+ANI-5515,Anime Series #615,"Mystery, Psychological",TV,24,8.45,48554,671,1144
+ANI-5516,Anime Series #616,"Drama, Romance",TV,24,7.76,5604,355,1125
+ANI-5517,Anime Series #617,"Action, Adventure",Movie,12,8.02,7972,267,531
+ANI-5518,Anime Series #618,"Comedy, Slice of Life",TV,26,6.63,11119,490,1167
+ANI-5519,Anime Series #619,"Action, Adventure",Movie,24,5.09,23088,1581,325
+ANI-5520,Anime Series #620,"Comedy, Slice of Life",TV,50,6.82,45298,2472,611
+ANI-5521,Anime Series #621,"Drama, Romance",TV,12,6.6,20789,873,697
+ANI-5522,Anime Series #622,"Drama, Romance",TV,24,6.16,30598,657,42
+ANI-5523,Anime Series #623,"Mystery, Psychological",TV,12,7.25,2922,221,670
+ANI-5524,Anime Series #624,"Action, Adventure",TV,24,5.06,48847,1625,353
+ANI-5525,Anime Series #625,"Mystery, Psychological",TV,26,8.58,54005,922,784
+ANI-5526,Anime Series #626,"Comedy, Slice of Life",TV,24,7.12,5734,283,642
+ANI-5527,Anime Series #627,"Drama, Romance",OVA,12,6.66,77383,2974,746
+ANI-5528,Anime Series #628,"Drama, Romance",TV,24,6.86,52629,2701,96
+ANI-5529,Anime Series #629,"Fantasy, Sci-Fi",TV,12,7.03,34140,899,104
+ANI-5530,Anime Series #630,"Fantasy, Sci-Fi",OVA,26,6.06,40744,1487,866
+ANI-5531,Anime Series #631,"Mystery, Psychological",TV,12,6.06,35462,2768,330
+ANI-5532,Anime Series #632,"Action, Adventure",TV,12,5.76,3264,246,720
+ANI-5533,Anime Series #633,"Comedy, Slice of Life",TV,12,5.64,66929,4718,1139
+ANI-5534,Anime Series #634,"Mystery, Psychological",TV,12,6.26,36352,2346,110
+ANI-5535,Anime Series #635,"Drama, Romance",TV,12,7.04,9986,209,273
+ANI-5536,Anime Series #636,"Drama, Romance",TV,12,8.41,57586,2458,32
+ANI-5537,Anime Series #637,"Drama, Romance",TV,12,5.47,59882,3649,1009
+ANI-5538,Anime Series #638,"Comedy, Slice of Life",TV,12,8.21,12507,354,164
+ANI-5539,Anime Series #639,"Mystery, Psychological",TV,26,5.43,80103,986,236
+ANI-5540,Anime Series #640,"Comedy, Slice of Life",TV,12,7.31,30986,1216,1045
+ANI-5541,Anime Series #641,"Drama, Romance",TV,100,5.53,10459,415,721
+ANI-5542,Anime Series #642,"Fantasy, Sci-Fi",TV,50,5.81,54091,787,737
+ANI-5543,Anime Series #643,"Mystery, Psychological",Movie,12,7.55,45907,1489,1041
+ANI-5544,Anime Series #644,"Fantasy, Sci-Fi",OVA,12,7.54,9840,730,1171
+ANI-5545,Anime Series #645,"Mystery, Psychological",Movie,12,8.02,103422,2846,940
+ANI-5546,Anime Series #646,"Drama, Romance",OVA,24,6.18,96890,4829,148
+ANI-5547,Anime Series #647,"Fantasy, Sci-Fi",Movie,24,8.3,90969,4016,242
+ANI-5548,Anime Series #648,"Fantasy, Sci-Fi",TV,12,8.92,25976,1827,326
+ANI-5549,Anime Series #649,"Mystery, Psychological",TV,12,7.46,87540,4880,336
+ANI-5550,Anime Series #650,"Fantasy, Sci-Fi",TV,24,5.23,93650,1975,957
+ANI-5551,Anime Series #651,"Fantasy, Sci-Fi",TV,12,5.08,283828,5676,843
+ANI-5552,Anime Series #652,"Drama, Romance",TV,100,7.37,158535,7772,123
+ANI-5553,Anime Series #653,"Mystery, Psychological",Special,12,6.57,24631,326,667
+ANI-5554,Anime Series #654,"Mystery, Psychological",Special,12,6.1,11545,433,726
+ANI-5555,Anime Series #655,"Action, Adventure",TV,12,7.02,17798,675,331
+ANI-5556,Anime Series #656,"Mystery, Psychological",TV,24,6.81,34638,822,321
+ANI-5557,Anime Series #657,"Drama, Romance",TV,12,7.02,82355,2558,839
+ANI-5558,Anime Series #658,"Fantasy, Sci-Fi",Movie,12,6.23,64684,2140,883
+ANI-5559,Anime Series #659,"Action, Adventure",Movie,12,9.38,77990,844,570
+ANI-5560,Anime Series #660,"Fantasy, Sci-Fi",TV,12,6.0,24395,1620,938
+ANI-5561,Anime Series #661,"Mystery, Psychological",Movie,24,6.9,14678,1130,966
+ANI-5562,Anime Series #662,"Comedy, Slice of Life",Movie,12,4.95,1721,52,366
+ANI-5563,Anime Series #663,"Fantasy, Sci-Fi",TV,24,5.93,49699,886,494
+ANI-5564,Anime Series #664,"Mystery, Psychological",TV,12,5.77,79746,6120,535
+ANI-5565,Anime Series #665,"Drama, Romance",Special,24,6.61,110474,6831,617
+ANI-5566,Anime Series #666,"Mystery, Psychological",OVA,24,6.93,32835,2376,905
+ANI-5567,Anime Series #667,"Action, Adventure",TV,24,6.74,131809,4647,1032
+ANI-5568,Anime Series #668,"Comedy, Slice of Life",TV,24,6.6,11808,518,723
+ANI-5569,Anime Series #669,"Comedy, Slice of Life",TV,12,7.44,36616,2750,1012
+ANI-5570,Anime Series #670,"Comedy, Slice of Life",Movie,1,7.52,12525,528,134
+ANI-5571,Anime Series #671,"Drama, Romance",TV,24,4.58,10917,622,388
+ANI-5572,Anime Series #672,"Comedy, Slice of Life",TV,12,8.36,153795,9125,1054
+ANI-5573,Anime Series #673,"Fantasy, Sci-Fi",TV,12,7.49,85616,5873,970
+ANI-5574,Anime Series #674,"Drama, Romance",TV,12,5.04,1093,85,684
+ANI-5575,Anime Series #675,"Mystery, Psychological",TV,24,8.19,16133,539,12
+ANI-5576,Anime Series #676,"Action, Adventure",TV,12,8.32,11979,327,532
+ANI-5577,Anime Series #677,"Drama, Romance",TV,1,5.01,8457,130,908
+ANI-5578,Anime Series #678,"Action, Adventure",OVA,12,6.86,60269,4216,189
+ANI-5579,Anime Series #679,"Drama, Romance",TV,24,7.49,42332,1290,212
+ANI-5580,Anime Series #680,"Mystery, Psychological",TV,24,8.38,30750,414,842
+ANI-5581,Anime Series #681,"Action, Adventure",Movie,50,7.74,11005,776,844
+ANI-5582,Anime Series #682,"Drama, Romance",TV,12,6.58,16760,765,1186
+ANI-5583,Anime Series #683,"Action, Adventure",TV,1,6.01,22510,1546,274
+ANI-5584,Anime Series #684,"Comedy, Slice of Life",TV,100,5.57,77468,3781,845
+ANI-5585,Anime Series #685,"Comedy, Slice of Life",Movie,1,6.18,226861,7250,265
+ANI-5586,Anime Series #686,"Comedy, Slice of Life",Movie,50,7.79,10665,203,428
+ANI-5587,Anime Series #687,"Fantasy, Sci-Fi",TV,50,,21391,868,557
+ANI-5588,Anime Series #688,"Comedy, Slice of Life",Movie,24,6.79,16939,200,893
+ANI-5589,Anime Series #689,"Comedy, Slice of Life",Special,26,8.41,2753,143,248
+ANI-5590,Anime Series #690,"Mystery, Psychological",TV,24,7.65,12873,514,172
+ANI-5591,Anime Series #691,"Action, Adventure",Movie,24,9.98,116442,2317,486
+ANI-5592,Anime Series #692,"Action, Adventure",TV,24,5.18,93030,4383,1020
+ANI-5593,Anime Series #693,"Comedy, Slice of Life",TV,1,6.96,9671,638,835
+ANI-5594,Anime Series #694,"Action, Adventure",TV,12,7.43,23298,1822,821
+ANI-5595,Anime Series #695,"Drama, Romance",Movie,26,,19111,896,328
+ANI-5596,Anime Series #696,"Comedy, Slice of Life",TV,12,5.6,8493,161,118
+ANI-5597,Anime Series #697,"Comedy, Slice of Life",TV,12,6.14,49170,3282,1115
+ANI-5598,Anime Series #698,"Fantasy, Sci-Fi",TV,12,7.26,41242,2421,530
+ANI-5599,Anime Series #699,"Drama, Romance",TV,12,5.85,28342,2176,1006
+ANI-5600,Anime Series #700,"Comedy, Slice of Life",Movie,1,6.93,97223,4614,259
+ANI-5601,Anime Series #701,"Comedy, Slice of Life",TV,12,5.4,48841,1709,673
+ANI-5602,Anime Series #702,"Action, Adventure",TV,24,8.51,15506,1200,917
+ANI-5603,Anime Series #703,"Comedy, Slice of Life",TV,12,9.05,23896,1139,1017
+ANI-5604,Anime Series #704,"Comedy, Slice of Life",TV,100,9.09,8635,95,1011
+ANI-5605,Anime Series #705,"Comedy, Slice of Life",TV,26,7.37,45247,1952,510
+ANI-5606,Anime Series #706,"Comedy, Slice of Life",Movie,12,7.39,44670,454,365
+ANI-5607,Anime Series #707,"Fantasy, Sci-Fi",TV,12,7.19,102581,6323,442
+ANI-5608,Anime Series #708,"Drama, Romance",TV,12,8.15,97333,4829,450
+ANI-5609,Anime Series #709,"Fantasy, Sci-Fi",TV,12,8.59,91182,1612,1194
+ANI-5610,Anime Series #710,"Action, Adventure",OVA,12,7.98,40309,2697,567
+ANI-5611,Anime Series #711,"Mystery, Psychological",TV,1,7.47,53280,2533,904
+ANI-5612,Anime Series #712,"Comedy, Slice of Life",OVA,26,7.98,75203,1352,282
+ANI-5613,Anime Series #713,"Action, Adventure",TV,12,7.19,5308,112,14
+ANI-5614,Anime Series #714,"Mystery, Psychological",Movie,1,5.72,18376,1241,674
+ANI-5615,Anime Series #715,"Comedy, Slice of Life",TV,12,6.55,9761,340,648
+ANI-5616,Anime Series #716,"Comedy, Slice of Life",Movie,12,7.43,36317,2450,807
+ANI-5617,Anime Series #717,"Mystery, Psychological",TV,24,6.24,91405,1358,724
+ANI-5618,Anime Series #718,"Fantasy, Sci-Fi",TV,12,6.17,13614,368,150
+ANI-5619,Anime Series #719,"Mystery, Psychological",TV,12,7.88,66134,4200,773
+ANI-5620,Anime Series #720,"Mystery, Psychological",OVA,12,7.95,26528,1456,894
+ANI-5621,Anime Series #721,"Drama, Romance",TV,24,7.53,117190,3688,1036
+ANI-5622,Anime Series #722,"Comedy, Slice of Life",Movie,100,6.65,49780,3759,286
+ANI-5623,Anime Series #723,"Comedy, Slice of Life",Special,24,6.83,188150,4661,1027
+ANI-5624,Anime Series #724,"Fantasy, Sci-Fi",TV,24,7.97,14596,1014,1112
+ANI-5625,Anime Series #725,"Fantasy, Sci-Fi",Special,24,6.21,129323,7591,424
+ANI-5626,Anime Series #726,"Drama, Romance",TV,12,5.6,22584,417,819
+ANI-5627,Anime Series #727,"Drama, Romance",OVA,26,7.76,49138,2400,927
+ANI-5628,Anime Series #728,"Drama, Romance",Special,24,7.07,10088,757,1044
+ANI-5629,Anime Series #729,"Fantasy, Sci-Fi",Special,12,8.64,71811,3829,191
+ANI-5630,Anime Series #730,"Mystery, Psychological",TV,12,6.03,191908,9022,1129
+ANI-5631,Anime Series #731,"Comedy, Slice of Life",OVA,1,8.38,77923,2777,1124
+ANI-5632,Anime Series #732,"Comedy, Slice of Life",TV,12,6.56,48329,3151,334
+ANI-5633,Anime Series #733,"Action, Adventure",TV,100,8.06,30229,2234,380
+ANI-5634,Anime Series #734,"Fantasy, Sci-Fi",TV,12,5.78,21674,1359,541
+ANI-5635,Anime Series #735,"Fantasy, Sci-Fi",TV,24,5.43,27651,1680,221
+ANI-5636,Anime Series #736,"Drama, Romance",Movie,12,7.59,20396,478,853
+ANI-5637,Anime Series #737,"Action, Adventure",TV,50,6.9,89901,6147,372
+ANI-5638,Anime Series #738,"Action, Adventure",Special,24,7.38,112298,1442,985
+ANI-5639,Anime Series #739,"Fantasy, Sci-Fi",Movie,12,6.13,149945,9448,418
+ANI-5640,Anime Series #740,"Drama, Romance",OVA,12,7.56,27595,683,581
+ANI-5641,Anime Series #741,"Comedy, Slice of Life",OVA,12,8.6,40007,1764,89
+ANI-5642,Anime Series #742,"Drama, Romance",Movie,50,8.41,43506,2552,1063
+ANI-5643,Anime Series #743,"Comedy, Slice of Life",TV,26,,53146,3355,1113
+ANI-5644,Anime Series #744,"Fantasy, Sci-Fi",TV,26,5.82,622,44,523
+ANI-5645,Anime Series #745,"Drama, Romance",TV,12,7.2,92976,2768,1095
+ANI-5646,Anime Series #746,"Action, Adventure",TV,24,8.13,16108,414,153
+ANI-5647,Anime Series #747,"Mystery, Psychological",TV,1,5.34,32448,2587,1191
+ANI-5648,Anime Series #748,"Action, Adventure",Movie,26,7.87,92621,2271,68
+ANI-5649,Anime Series #749,"Comedy, Slice of Life",TV,12,9.41,288615,16330,1155
+ANI-5650,Anime Series #750,"Fantasy, Sci-Fi",TV,24,7.9,79708,6112,634
+ANI-5651,Anime Series #751,"Drama, Romance",TV,24,5.49,1757,127,727
+ANI-5652,Anime Series #752,"Fantasy, Sci-Fi",TV,24,5.95,23502,964,898
+ANI-5653,Anime Series #753,"Fantasy, Sci-Fi",Movie,12,6.44,14698,802,269
+ANI-5654,Anime Series #754,"Comedy, Slice of Life",Movie,12,7.04,166895,7850,270
+ANI-5655,Anime Series #755,"Fantasy, Sci-Fi",Special,100,7.58,15841,542,738
+ANI-5656,Anime Series #756,"Drama, Romance",TV,12,7.99,144043,2896,934
+ANI-5657,Anime Series #757,"Action, Adventure",TV,12,6.87,139143,9216,797
+ANI-5658,Anime Series #758,"Fantasy, Sci-Fi",TV,26,7.48,91945,1501,816
+ANI-5659,Anime Series #759,"Drama, Romance",Special,24,6.01,5661,298,301
+ANI-5660,Anime Series #760,"Drama, Romance",TV,1,6.42,599,30,692
+ANI-5661,Anime Series #761,"Comedy, Slice of Life",TV,12,8.17,79465,2657,932
+ANI-5662,Anime Series #762,"Fantasy, Sci-Fi",TV,24,7.7,93170,1814,817
+ANI-5663,Anime Series #763,"Comedy, Slice of Life",TV,12,7.83,164248,10836,847
+ANI-5664,Anime Series #764,"Action, Adventure",TV,12,6.06,12819,542,600
+ANI-5665,Anime Series #765,"Action, Adventure",Movie,12,7.16,66552,4044,11
+ANI-5666,Anime Series #766,"Drama, Romance",Movie,24,7.29,37101,413,707
+ANI-5667,Anime Series #767,"Fantasy, Sci-Fi",TV,24,7.56,20410,310,508
+ANI-5668,Anime Series #768,"Drama, Romance",TV,12,8.32,47107,1050,860
+ANI-5669,Anime Series #769,"Fantasy, Sci-Fi",TV,12,7.25,40225,722,1192
+ANI-5670,Anime Series #770,"Comedy, Slice of Life",Movie,24,8.95,17786,416,958
+ANI-5671,Anime Series #771,"Action, Adventure",OVA,12,5.04,16130,936,99
+ANI-5672,Anime Series #772,"Action, Adventure",OVA,12,6.86,33833,449,788
+ANI-5673,Anime Series #773,"Comedy, Slice of Life",TV,24,8.34,32626,412,1149
+ANI-5674,Anime Series #774,"Mystery, Psychological",Movie,12,6.38,18480,225,636
+ANI-5675,Anime Series #775,"Mystery, Psychological",Special,24,8.12,15807,930,933
+ANI-5676,Anime Series #776,"Mystery, Psychological",Movie,24,7.31,154790,7357,641
+ANI-5677,Anime Series #777,"Fantasy, Sci-Fi",TV,12,9.29,99659,3579,53
+ANI-5678,Anime Series #778,"Comedy, Slice of Life",Movie,50,7.03,85353,4890,358
+ANI-5679,Anime Series #779,"Fantasy, Sci-Fi",Movie,24,7.05,12557,612,740
+ANI-5680,Anime Series #780,"Fantasy, Sci-Fi",TV,12,9.18,10992,115,964
+ANI-5681,Anime Series #781,"Comedy, Slice of Life",TV,24,6.8,83360,5726,86
+ANI-5682,Anime Series #782,"Fantasy, Sci-Fi",Movie,24,8.36,10708,369,390
+ANI-5683,Anime Series #783,"Comedy, Slice of Life",OVA,24,7.54,35512,1348,968
+ANI-5684,Anime Series #784,"Mystery, Psychological",Special,26,8.4,13014,842,778
+ANI-5685,Anime Series #785,"Mystery, Psychological",TV,100,6.82,24246,559,395
+ANI-5686,Anime Series #786,"Fantasy, Sci-Fi",Movie,1,7.08,96520,1033,131
+ANI-5687,Anime Series #787,"Action, Adventure",TV,24,6.8,111512,8209,621
+ANI-5688,Anime Series #788,"Comedy, Slice of Life",Special,24,5.03,285878,12974,47
+ANI-5689,Anime Series #789,"Drama, Romance",TV,12,6.91,144534,4981,986
+ANI-5690,Anime Series #790,"Drama, Romance",TV,50,,56122,3778,802
+ANI-5691,Anime Series #791,"Fantasy, Sci-Fi",TV,12,6.39,28757,340,731
+ANI-5692,Anime Series #792,"Action, Adventure",Movie,24,7.36,3471,83,549
+ANI-5693,Anime Series #793,"Comedy, Slice of Life",TV,12,8.51,47345,988,800
+ANI-5694,Anime Series #794,"Mystery, Psychological",Movie,12,7.77,12329,760,972
+ANI-5695,Anime Series #795,"Fantasy, Sci-Fi",TV,12,7.11,95401,3038,387
+ANI-5696,Anime Series #796,"Comedy, Slice of Life",TV,12,6.22,40303,2583,346
+ANI-5697,Anime Series #797,"Comedy, Slice of Life",TV,12,8.79,66619,859,729
+ANI-5698,Anime Series #798,"Comedy, Slice of Life",TV,12,8.42,56465,2968,915
+ANI-5699,Anime Series #799,"Action, Adventure",TV,12,8.76,21834,704,441
+ANI-5700,Anime Series #800,"Comedy, Slice of Life",Movie,24,8.65,71665,1654,165
+ANI-5701,Anime Series #801,"Action, Adventure",TV,12,5.63,93195,6260,1022
+ANI-5702,Anime Series #802,"Action, Adventure",TV,24,6.81,68654,2667,208
+ANI-5703,Anime Series #803,"Comedy, Slice of Life",TV,50,7.54,75485,3775,465
+ANI-5704,Anime Series #804,"Mystery, Psychological",TV,24,6.15,22815,280,420
+ANI-5705,Anime Series #805,"Comedy, Slice of Life",TV,12,6.51,144342,9441,389
+ANI-5706,Anime Series #806,"Mystery, Psychological",Special,12,7.9,28132,846,554
+ANI-5707,Anime Series #807,"Fantasy, Sci-Fi",TV,12,7.86,114175,6683,235
+ANI-5708,Anime Series #808,"Drama, Romance",Movie,100,9.14,98029,6198,43
+ANI-5709,Anime Series #809,"Fantasy, Sci-Fi",Movie,12,6.41,7138,129,1069
+ANI-5710,Anime Series #810,"Action, Adventure",TV,24,6.18,169969,5220,561
+ANI-5711,Anime Series #811,"Fantasy, Sci-Fi",TV,12,9.51,281037,17042,686
+ANI-5712,Anime Series #812,"Drama, Romance",TV,12,6.93,47088,1236,897
+ANI-5713,Anime Series #813,"Drama, Romance",TV,26,5.11,76918,5335,1031
+ANI-5714,Anime Series #814,"Mystery, Psychological",Movie,12,7.64,136168,4335,411
+ANI-5715,Anime Series #815,"Fantasy, Sci-Fi",Movie,12,6.02,1511,57,1056
+ANI-5716,Anime Series #816,"Action, Adventure",Special,100,6.78,133455,2266,990
+ANI-5717,Anime Series #817,"Action, Adventure",Movie,12,5.64,49857,1013,63
+ANI-5718,Anime Series #818,"Mystery, Psychological",TV,24,8.42,88645,2595,604
+ANI-5719,Anime Series #819,"Mystery, Psychological",Movie,12,7.65,39405,528,105
+ANI-5720,Anime Series #820,"Fantasy, Sci-Fi",Movie,1,5.78,38309,900,129
+ANI-5721,Anime Series #821,"Mystery, Psychological",Movie,26,7.42,114403,4418,396
+ANI-5722,Anime Series #822,"Drama, Romance",OVA,12,7.94,35910,1314,77
+ANI-5723,Anime Series #823,"Action, Adventure",Special,100,6.97,32413,774,216
+ANI-5724,Anime Series #824,"Drama, Romance",TV,12,9.02,47348,740,653
+ANI-5725,Anime Series #825,"Comedy, Slice of Life",TV,12,8.35,37049,1195,992
+ANI-5726,Anime Series #826,"Drama, Romance",Movie,24,6.67,30055,1868,1146
+ANI-5727,Anime Series #827,"Action, Adventure",TV,24,6.95,10454,477,302
+ANI-5728,Anime Series #828,"Comedy, Slice of Life",Movie,24,5.84,25825,1969,595
+ANI-5729,Anime Series #829,"Fantasy, Sci-Fi",TV,24,5.33,17067,337,314
+ANI-5730,Anime Series #830,"Comedy, Slice of Life",TV,24,6.24,26080,639,315
+ANI-5731,Anime Series #831,"Mystery, Psychological",TV,1,6.43,45466,1346,1116
+ANI-5732,Anime Series #832,"Action, Adventure",Movie,26,8.66,47433,517,520
+ANI-5733,Anime Series #833,"Mystery, Psychological",TV,24,,14133,1074,1131
+ANI-5734,Anime Series #834,"Drama, Romance",Movie,12,7.31,4913,202,977
+ANI-5735,Anime Series #835,"Fantasy, Sci-Fi",Special,26,7.44,68714,3003,1071
+ANI-5736,Anime Series #836,"Action, Adventure",TV,24,6.42,38099,801,93
+ANI-5737,Anime Series #837,"Fantasy, Sci-Fi",TV,1,8.32,29678,2109,229
+ANI-5738,Anime Series #838,"Action, Adventure",TV,12,6.86,7439,435,705
+ANI-5739,Anime Series #839,"Mystery, Psychological",TV,24,6.55,27278,1096,1035
+ANI-5740,Anime Series #840,"Drama, Romance",TV,1,9.01,85735,6126,304
+ANI-5741,Anime Series #841,"Comedy, Slice of Life",TV,24,6.27,44046,3232,627
+ANI-5742,Anime Series #842,"Fantasy, Sci-Fi",TV,24,8.06,5269,70,1030
+ANI-5743,Anime Series #843,"Action, Adventure",TV,1,6.58,20693,379,410
+ANI-5744,Anime Series #844,"Action, Adventure",Movie,24,5.86,195608,2334,584
+ANI-5745,Anime Series #845,"Fantasy, Sci-Fi",Special,24,6.84,39818,2019,1107
+ANI-5746,Anime Series #846,"Comedy, Slice of Life",TV,12,9.79,17371,438,1090
+ANI-5747,Anime Series #847,"Drama, Romance",OVA,24,5.61,122848,8494,159
+ANI-5748,Anime Series #848,"Action, Adventure",TV,12,6.43,20973,893,931
+ANI-5749,Anime Series #849,"Action, Adventure",TV,12,8.55,65949,4526,133
+ANI-5750,Anime Series #850,"Fantasy, Sci-Fi",TV,24,6.17,8462,413,700
+ANI-5751,Anime Series #851,"Fantasy, Sci-Fi",TV,12,6.54,9009,592,202
+ANI-5752,Anime Series #852,"Action, Adventure",TV,100,7.35,41698,1502,468
+ANI-5753,Anime Series #853,"Action, Adventure",TV,24,6.95,14210,1082,635
+ANI-5754,Anime Series #854,"Action, Adventure",Special,24,7.76,3029,171,244
+ANI-5755,Anime Series #855,"Mystery, Psychological",TV,12,6.91,130999,6770,1127
+ANI-5756,Anime Series #856,"Action, Adventure",Movie,12,7.21,3380,117,588
+ANI-5757,Anime Series #857,"Drama, Romance",Movie,12,7.06,63692,4815,280
+ANI-5758,Anime Series #858,"Drama, Romance",TV,12,6.3,20747,697,924
+ANI-5759,Anime Series #859,"Comedy, Slice of Life",TV,50,5.16,136031,9319,909
+ANI-5760,Anime Series #860,"Fantasy, Sci-Fi",TV,26,9.31,214122,8201,772
+ANI-5761,Anime Series #861,"Comedy, Slice of Life",TV,50,6.29,20930,1333,832
+ANI-5762,Anime Series #862,"Action, Adventure",TV,24,6.35,45215,3338,264
+ANI-5763,Anime Series #863,"Fantasy, Sci-Fi",TV,24,7.42,74636,3178,1059
+ANI-5764,Anime Series #864,"Action, Adventure",TV,24,6.06,7085,331,749
+ANI-5765,Anime Series #865,"Fantasy, Sci-Fi",TV,12,8.21,62301,2063,762
+ANI-5766,Anime Series #866,"Mystery, Psychological",TV,24,7.48,118828,1643,1187
+ANI-5767,Anime Series #867,"Mystery, Psychological",TV,12,6.9,10331,575,522
+ANI-5768,Anime Series #868,"Mystery, Psychological",Special,24,6.65,91727,1685,1015
+ANI-5769,Anime Series #869,"Comedy, Slice of Life",TV,12,5.88,6642,231,948
+ANI-5770,Anime Series #870,"Fantasy, Sci-Fi",Movie,24,7.54,42501,1464,759
+ANI-5771,Anime Series #871,"Comedy, Slice of Life",Special,12,7.35,21227,436,41
+ANI-5772,Anime Series #872,"Fantasy, Sci-Fi",TV,12,6.49,32406,1836,744
+ANI-5773,Anime Series #873,"Action, Adventure",TV,24,7.78,18378,408,910
+ANI-5774,Anime Series #874,"Mystery, Psychological",TV,12,8.94,15591,1005,963
+ANI-5775,Anime Series #875,"Mystery, Psychological",Special,12,7.22,68461,1879,668
+ANI-5776,Anime Series #876,"Fantasy, Sci-Fi",Movie,12,6.93,13123,395,452
+ANI-5777,Anime Series #877,"Comedy, Slice of Life",TV,12,6.14,26747,911,637
+ANI-5778,Anime Series #878,"Comedy, Slice of Life",Movie,50,7.02,16548,342,923
+ANI-5779,Anime Series #879,"Drama, Romance",TV,24,6.74,14132,570,228
+ANI-5780,Anime Series #880,"Mystery, Psychological",TV,50,6.05,49821,778,979
+ANI-5781,Anime Series #881,"Mystery, Psychological",Movie,12,7.7,2824,112,1193
+ANI-5782,Anime Series #882,"Comedy, Slice of Life",Movie,12,7.5,78270,2645,426
+ANI-5783,Anime Series #883,"Mystery, Psychological",TV,24,7.28,40008,1347,295
+ANI-5784,Anime Series #884,"Comedy, Slice of Life",OVA,12,6.8,88640,4985,1068
+ANI-5785,Anime Series #885,"Drama, Romance",TV,12,8.21,12477,796,217
+ANI-5786,Anime Series #886,"Fantasy, Sci-Fi",Movie,24,5.27,62291,2175,875
+ANI-5787,Anime Series #887,"Fantasy, Sci-Fi",TV,24,5.33,27786,787,962
+ANI-5788,Anime Series #888,"Drama, Romance",OVA,12,7.45,4495,200,56
+ANI-5789,Anime Series #889,"Mystery, Psychological",Movie,12,8.59,70312,4580,198
+ANI-5790,Anime Series #890,"Action, Adventure",TV,24,7.33,72313,3985,1103
+ANI-5791,Anime Series #891,"Mystery, Psychological",Special,12,7.34,16298,206,596
+ANI-5792,Anime Series #892,"Comedy, Slice of Life",TV,100,6.05,124374,5422,1137
+ANI-5793,Anime Series #893,"Action, Adventure",TV,100,4.84,72689,5769,1170
+ANI-5794,Anime Series #894,"Drama, Romance",TV,50,6.13,18818,653,795
+ANI-5795,Anime Series #895,"Fantasy, Sci-Fi",TV,12,7.91,14163,578,200
+ANI-5796,Anime Series #896,"Fantasy, Sci-Fi",TV,12,5.47,29498,888,501
+ANI-5797,Anime Series #897,"Mystery, Psychological",Movie,100,6.26,17821,799,1000
+ANI-5798,Anime Series #898,"Fantasy, Sci-Fi",Movie,12,5.48,12732,270,1108
+ANI-5799,Anime Series #899,"Mystery, Psychological",TV,12,6.2,25966,708,675
+ANI-5800,Anime Series #900,"Comedy, Slice of Life",OVA,12,8.45,1802,107,1158
+ANI-5801,Anime Series #901,"Comedy, Slice of Life",Movie,12,6.53,26159,514,381
+ANI-5802,Anime Series #902,"Drama, Romance",OVA,24,8.21,13029,974,171
+ANI-5803,Anime Series #903,"Comedy, Slice of Life",Special,100,6.56,15848,500,774
+ANI-5804,Anime Series #904,"Mystery, Psychological",TV,26,8.79,4808,241,615
+ANI-5805,Anime Series #905,"Fantasy, Sci-Fi",Movie,24,7.58,44949,1462,981
+ANI-5806,Anime Series #906,"Comedy, Slice of Life",TV,12,6.69,32433,1409,919
+ANI-5807,Anime Series #907,"Comedy, Slice of Life",OVA,24,7.02,69940,5124,1038
+ANI-5808,Anime Series #908,"Mystery, Psychological",Movie,12,5.61,218021,3226,488
+ANI-5809,Anime Series #909,"Comedy, Slice of Life",TV,12,6.64,6865,480,149
+ANI-5810,Anime Series #910,"Fantasy, Sci-Fi",Special,12,8.76,16401,804,798
+ANI-5811,Anime Series #911,"Fantasy, Sci-Fi",Movie,24,7.6,57856,3272,556
+ANI-5812,Anime Series #912,"Fantasy, Sci-Fi",Special,12,4.9,14045,195,671
+ANI-5813,Anime Series #913,"Fantasy, Sci-Fi",TV,1,7.01,2030,128,40
+ANI-5814,Anime Series #914,"Action, Adventure",OVA,1,7.38,6315,119,16
+ANI-5815,Anime Series #915,"Fantasy, Sci-Fi",Movie,12,8.03,28925,2242,1162
+ANI-5816,Anime Series #916,"Action, Adventure",TV,12,6.79,28674,1891,186
+ANI-5817,Anime Series #917,"Fantasy, Sci-Fi",OVA,26,7.07,179824,8002,44
+ANI-5818,Anime Series #918,"Fantasy, Sci-Fi",Movie,1,8.34,31863,2379,747
+ANI-5819,Anime Series #919,"Mystery, Psychological",Movie,50,6.93,57170,1248,974
+ANI-5820,Anime Series #920,"Fantasy, Sci-Fi",TV,12,6.4,34383,2730,1142
+ANI-5821,Anime Series #921,"Comedy, Slice of Life",OVA,12,8.12,16229,976,730
+ANI-5822,Anime Series #922,"Fantasy, Sci-Fi",Movie,12,8.14,6071,102,250
+ANI-5823,Anime Series #923,"Drama, Romance",OVA,12,4.82,98476,4683,375
+ANI-5824,Anime Series #924,"Mystery, Psychological",TV,12,7.48,8782,524,362
+ANI-5825,Anime Series #925,"Mystery, Psychological",TV,26,6.09,5595,296,589
+ANI-5826,Anime Series #926,"Fantasy, Sci-Fi",TV,12,7.64,12529,497,471
+ANI-5827,Anime Series #927,"Drama, Romance",Movie,50,8.25,624,17,285
+ANI-5828,Anime Series #928,"Fantasy, Sci-Fi",TV,12,7.88,4234,112,1086
+ANI-5829,Anime Series #929,"Comedy, Slice of Life",TV,12,7.99,50919,3813,115
+ANI-5830,Anime Series #930,"Mystery, Psychological",Movie,12,6.47,14455,382,583
+ANI-5831,Anime Series #931,"Mystery, Psychological",TV,12,6.7,21163,1637,874
+ANI-5832,Anime Series #932,"Drama, Romance",Special,26,7.85,90681,2241,997
+ANI-5833,Anime Series #933,"Action, Adventure",TV,12,7.28,74618,2753,1141
+ANI-5834,Anime Series #934,"Drama, Romance",Special,50,5.5,34388,373,343
+ANI-5835,Anime Series #935,"Comedy, Slice of Life",TV,1,8.18,47963,3511,318
+ANI-5836,Anime Series #936,"Drama, Romance",TV,50,5.59,4985,86,779
+ANI-5837,Anime Series #937,"Action, Adventure",TV,24,7.56,72189,2527,1126
+ANI-5838,Anime Series #938,"Comedy, Slice of Life",Movie,24,7.43,36803,2538,918
+ANI-5839,Anime Series #939,"Comedy, Slice of Life",TV,12,8.5,42808,2801,363
+ANI-5840,Anime Series #940,"Action, Adventure",TV,24,6.94,55259,3807,1088
+ANI-5841,Anime Series #941,"Fantasy, Sci-Fi",Special,1,4.97,35174,2602,811
+ANI-5842,Anime Series #942,"Drama, Romance",TV,12,7.36,37375,2757,792
+ANI-5843,Anime Series #943,"Comedy, Slice of Life",Movie,26,7.57,35120,2245,55
+ANI-5844,Anime Series #944,"Drama, Romance",Movie,50,8.38,34840,1768,998
+ANI-5845,Anime Series #945,"Action, Adventure",TV,1,6.62,69855,3444,822
+ANI-5846,Anime Series #946,"Mystery, Psychological",Movie,12,7.97,28361,309,576
+ANI-5847,Anime Series #947,"Action, Adventure",TV,12,8.19,644,39,672
+ANI-5848,Anime Series #948,"Drama, Romance",TV,12,6.39,47845,1237,647
+ANI-5849,Anime Series #949,"Comedy, Slice of Life",TV,26,7.55,153022,10406,1157
+ANI-5850,Anime Series #950,"Drama, Romance",OVA,12,5.58,15350,748,804
+ANI-5851,Anime Series #951,"Mystery, Psychological",TV,12,7.82,85193,6739,656
+ANI-5852,Anime Series #952,"Comedy, Slice of Life",TV,12,7.44,30893,763,676
+ANI-5853,Anime Series #953,"Mystery, Psychological",Movie,12,5.84,51998,3153,1046
+ANI-5854,Anime Series #954,"Fantasy, Sci-Fi",TV,12,6.76,111262,5376,293
+ANI-5855,Anime Series #955,"Action, Adventure",Special,24,8.39,74204,5582,1152
+ANI-5856,Anime Series #956,"Fantasy, Sci-Fi",TV,100,7.42,108456,3103,483
+ANI-5857,Anime Series #957,"Drama, Romance",TV,12,6.45,978,13,377
+ANI-5858,Anime Series #958,"Fantasy, Sci-Fi",Movie,26,6.36,10870,522,775
+ANI-5859,Anime Series #959,"Action, Adventure",TV,24,8.3,28038,1304,283
+ANI-5860,Anime Series #960,"Comedy, Slice of Life",Movie,12,6.66,94641,3011,603
+ANI-5861,Anime Series #961,"Mystery, Psychological",Special,26,7.44,91629,7243,398
+ANI-5862,Anime Series #962,"Comedy, Slice of Life",TV,12,6.75,10736,159,69
+ANI-5863,Anime Series #963,"Fantasy, Sci-Fi",TV,24,4.77,8171,407,851
+ANI-5864,Anime Series #964,"Drama, Romance",TV,24,6.48,90500,2553,462
+ANI-5865,Anime Series #965,"Fantasy, Sci-Fi",OVA,24,8.45,39482,400,349
+ANI-5866,Anime Series #966,"Action, Adventure",TV,12,9.56,49777,3939,188
+ANI-5867,Anime Series #967,"Action, Adventure",TV,24,6.35,83328,3642,1096
+ANI-5868,Anime Series #968,"Drama, Romance",Movie,26,7.57,12396,867,976
+ANI-5869,Anime Series #969,"Comedy, Slice of Life",TV,24,9.76,7837,539,94
+ANI-5870,Anime Series #970,"Action, Adventure",TV,26,8.52,98465,6583,936
+ANI-5871,Anime Series #971,"Action, Adventure",Special,24,5.87,6426,270,939
+ANI-5872,Anime Series #972,"Drama, Romance",TV,12,6.91,5115,371,502
+ANI-5873,Anime Series #973,"Comedy, Slice of Life",TV,12,7.48,16722,597,345
+ANI-5874,Anime Series #974,"Fantasy, Sci-Fi",TV,24,8.6,19551,754,654
+ANI-5875,Anime Series #975,"Mystery, Psychological",OVA,26,5.88,14296,398,562
+ANI-5876,Anime Series #976,"Drama, Romance",TV,12,8.05,68166,2819,625
+ANI-5877,Anime Series #977,"Comedy, Slice of Life",TV,12,7.97,181756,14368,1117
+ANI-5878,Anime Series #978,"Mystery, Psychological",TV,12,6.87,11631,583,831
+ANI-5879,Anime Series #979,"Drama, Romance",Special,24,9.56,76629,5224,1067
+ANI-5880,Anime Series #980,"Fantasy, Sci-Fi",TV,24,6.2,2762,78,876
+ANI-5881,Anime Series #981,"Fantasy, Sci-Fi",TV,24,7.6,6829,525,276
+ANI-5882,Anime Series #982,"Comedy, Slice of Life",TV,12,7.42,36692,400,902
+ANI-5883,Anime Series #983,"Comedy, Slice of Life",TV,12,7.61,392823,29507,162
+ANI-5884,Anime Series #984,"Fantasy, Sci-Fi",Movie,26,8.47,149656,10903,754
+ANI-5885,Anime Series #985,"Fantasy, Sci-Fi",Movie,12,5.72,6435,94,887
+ANI-5886,Anime Series #986,"Drama, Romance",TV,12,7.37,14201,743,796
+ANI-5887,Anime Series #987,"Comedy, Slice of Life",TV,24,9.37,146246,9501,734
+ANI-5888,Anime Series #988,"Mystery, Psychological",TV,50,8.08,8668,331,780
+ANI-5889,Anime Series #989,"Fantasy, Sci-Fi",TV,12,6.47,68392,1123,1072
+ANI-5890,Anime Series #990,"Mystery, Psychological",Movie,100,6.32,555,37,813
+ANI-5891,Anime Series #991,"Comedy, Slice of Life",TV,12,7.77,50444,2151,225
+ANI-5892,Anime Series #992,"Comedy, Slice of Life",TV,12,6.66,34620,984,82
+ANI-5893,Anime Series #993,"Action, Adventure",TV,24,7.04,32340,483,132
+ANI-5894,Anime Series #994,"Fantasy, Sci-Fi",OVA,24,6.38,88860,4870,139
+ANI-5895,Anime Series #995,"Comedy, Slice of Life",OVA,12,9.48,4709,61,19
+ANI-5896,Anime Series #996,"Comedy, Slice of Life",TV,24,7.58,24187,1581,1183
+ANI-5897,Anime Series #997,"Fantasy, Sci-Fi",TV,12,7.26,30033,1920,184
+ANI-5898,Anime Series #998,"Action, Adventure",Special,24,5.4,7115,231,232
+ANI-5899,Anime Series #999,"Action, Adventure",TV,12,6.29,4977,214,619
+ANI-5900,Anime Series #1000,"Action, Adventure",TV,24,7.13,10399,591,394
+ANI-5901,Anime Series #1001,"Action, Adventure",Movie,24,7.13,14290,1102,1114
+ANI-5902,Anime Series #1002,"Drama, Romance",TV,26,9.03,169658,7873,1123
+ANI-5903,Anime Series #1003,"Fantasy, Sci-Fi",TV,24,7.34,32776,2614,146
+ANI-5904,Anime Series #1004,"Fantasy, Sci-Fi",OVA,24,8.34,36196,1185,777
+ANI-5905,Anime Series #1005,"Fantasy, Sci-Fi",TV,24,7.4,61878,2899,173
+ANI-5906,Anime Series #1006,"Action, Adventure",Movie,1,8.15,58142,1051,234
+ANI-5907,Anime Series #1007,"Action, Adventure",TV,26,5.37,35435,1734,803
+ANI-5908,Anime Series #1008,"Comedy, Slice of Life",Special,26,5.82,21263,1010,685
+ANI-5909,Anime Series #1009,"Drama, Romance",TV,24,8.22,20602,1430,449
+ANI-5910,Anime Series #1010,"Fantasy, Sci-Fi",OVA,24,8.85,3472,276,140
+ANI-5911,Anime Series #1011,"Drama, Romance",TV,12,5.32,115444,9123,591
+ANI-5912,Anime Series #1012,"Fantasy, Sci-Fi",TV,26,7.21,73852,1960,665
+ANI-5913,Anime Series #1013,"Action, Adventure",TV,12,5.55,49321,1661,446
+ANI-5914,Anime Series #1014,"Action, Adventure",OVA,12,6.47,25715,751,799
+ANI-5915,Anime Series #1015,"Fantasy, Sci-Fi",TV,24,5.11,44169,1059,680
+ANI-5916,Anime Series #1016,"Mystery, Psychological",OVA,12,,33688,690,827
+ANI-5917,Anime Series #1017,"Action, Adventure",TV,100,7.0,16505,756,571
+ANI-5918,Anime Series #1018,"Comedy, Slice of Life",OVA,26,6.98,18231,1295,539
+ANI-5919,Anime Series #1019,"Action, Adventure",TV,24,6.88,104264,5347,786
+ANI-5920,Anime Series #1020,"Comedy, Slice of Life",TV,12,7.9,50880,3616,869
+ANI-5921,Anime Series #1021,"Drama, Romance",TV,24,9.09,571,44,260
+ANI-5922,Anime Series #1022,"Action, Adventure",TV,24,5.87,20290,747,695
+ANI-5923,Anime Series #1023,"Action, Adventure",TV,12,6.28,21271,1456,1049
+ANI-5924,Anime Series #1024,"Drama, Romance",Movie,100,7.34,61765,843,1128
+ANI-5925,Anime Series #1025,"Comedy, Slice of Life",TV,12,6.91,60774,2654,496
+ANI-5926,Anime Series #1026,"Mystery, Psychological",Movie,26,6.85,31695,1134,233
+ANI-5927,Anime Series #1027,"Comedy, Slice of Life",TV,26,5.76,151275,3681,577
+ANI-5928,Anime Series #1028,"Fantasy, Sci-Fi",TV,1,6.7,103375,4206,945
+ANI-5929,Anime Series #1029,"Fantasy, Sci-Fi",Special,24,6.71,101074,4150,125
+ANI-5930,Anime Series #1030,"Fantasy, Sci-Fi",TV,24,7.44,21905,1458,1070
+ANI-5931,Anime Series #1031,"Drama, Romance",Movie,100,6.2,28693,2032,1051
+ANI-5932,Anime Series #1032,"Comedy, Slice of Life",TV,26,8.18,27646,1547,569
+ANI-5933,Anime Series #1033,"Action, Adventure",TV,26,5.81,29514,1603,1039
+ANI-5934,Anime Series #1034,"Fantasy, Sci-Fi",TV,26,8.91,110506,1957,119
+ANI-5935,Anime Series #1035,"Comedy, Slice of Life",TV,24,6.3,14825,745,879
+ANI-5936,Anime Series #1036,"Action, Adventure",TV,12,8.79,81523,2381,555
+ANI-5937,Anime Series #1037,"Comedy, Slice of Life",TV,12,6.38,36581,1120,37
+ANI-5938,Anime Series #1038,"Drama, Romance",TV,24,8.11,14823,246,205
+ANI-5939,Anime Series #1039,"Fantasy, Sci-Fi",TV,12,6.8,37964,2069,185
+ANI-5940,Anime Series #1040,"Mystery, Psychological",OVA,24,7.29,11373,578,1008
+ANI-5941,Anime Series #1041,"Fantasy, Sci-Fi",TV,24,7.86,6224,158,941
+ANI-5942,Anime Series #1042,"Fantasy, Sci-Fi",Movie,12,6.83,91562,2601,213
+ANI-5943,Anime Series #1043,"Drama, Romance",TV,12,5.11,60585,3884,196
+ANI-5944,Anime Series #1044,"Action, Adventure",OVA,24,6.5,11969,784,113
+ANI-5945,Anime Series #1045,"Fantasy, Sci-Fi",TV,100,6.64,143120,6371,519
+ANI-5946,Anime Series #1046,"Action, Adventure",TV,26,9.1,1735,35,342
+ANI-5947,Anime Series #1047,"Action, Adventure",TV,12,7.15,20769,288,582
+ANI-5948,Anime Series #1048,"Drama, Romance",TV,24,7.39,1594,46,475
+ANI-5949,Anime Series #1049,"Fantasy, Sci-Fi",OVA,26,7.07,8174,500,681
+ANI-5950,Anime Series #1050,"Drama, Romance",TV,24,7.44,10427,542,60
+ANI-5951,Anime Series #1051,"Drama, Romance",Special,12,,83624,5039,177
+ANI-5952,Anime Series #1052,"Mystery, Psychological",OVA,12,6.44,248876,10707,572
+ANI-5953,Anime Series #1053,"Drama, Romance",TV,12,7.93,101490,6376,1178
+ANI-5954,Anime Series #1054,"Mystery, Psychological",TV,12,6.95,50911,2222,58
+ANI-5955,Anime Series #1055,"Action, Adventure",Special,12,7.09,64673,1027,859
+ANI-5956,Anime Series #1056,"Action, Adventure",TV,24,7.18,37493,584,456
+ANI-5957,Anime Series #1057,"Comedy, Slice of Life",Movie,24,7.96,27956,1906,6
+ANI-5958,Anime Series #1058,"Comedy, Slice of Life",Special,24,6.5,59410,3212,863
+ANI-5959,Anime Series #1059,"Action, Adventure",Movie,12,7.31,181312,5355,683
+ANI-5960,Anime Series #1060,"Fantasy, Sci-Fi",Movie,24,4.83,1965,123,455
+ANI-5961,Anime Series #1061,"Comedy, Slice of Life",OVA,24,5.43,19350,377,416
+ANI-5962,Anime Series #1062,"Drama, Romance",Movie,1,6.93,20528,1132,587
+ANI-5963,Anime Series #1063,"Comedy, Slice of Life",TV,12,5.98,27243,2159,31
+ANI-5964,Anime Series #1064,"Action, Adventure",TV,12,8.28,49794,1020,470
+ANI-5965,Anime Series #1065,"Fantasy, Sci-Fi",Movie,12,6.03,36551,728,1004
+ANI-5966,Anime Series #1066,"Action, Adventure",Special,24,7.06,1445,61,542
+ANI-5967,Anime Series #1067,"Fantasy, Sci-Fi",TV,1,8.08,27018,1485,728
+ANI-5968,Anime Series #1068,"Comedy, Slice of Life",TV,24,7.74,48806,578,951
+ANI-5969,Anime Series #1069,"Drama, Romance",TV,26,6.6,35642,1603,901
+ANI-5970,Anime Series #1070,"Drama, Romance",OVA,24,6.77,103310,1634,768
+ANI-5971,Anime Series #1071,"Action, Adventure",TV,12,7.72,25924,697,1047
+ANI-5972,Anime Series #1072,"Fantasy, Sci-Fi",Movie,50,8.09,1131,67,1150
+ANI-5973,Anime Series #1073,"Comedy, Slice of Life",Special,12,8.85,17266,1065,472
+ANI-5974,Anime Series #1074,"Fantasy, Sci-Fi",TV,12,8.09,7790,475,1078
+ANI-5975,Anime Series #1075,"Fantasy, Sci-Fi",Special,1,7.95,14899,216,393
+ANI-5976,Anime Series #1076,"Fantasy, Sci-Fi",Special,12,,22977,1495,297
+ANI-5977,Anime Series #1077,"Comedy, Slice of Life",Special,12,7.33,56951,2292,629
+ANI-5978,Anime Series #1078,"Fantasy, Sci-Fi",TV,12,6.79,20090,869,482
+ANI-5979,Anime Series #1079,"Drama, Romance",TV,24,7.75,108255,4262,38
+ANI-5980,Anime Series #1080,"Action, Adventure",Movie,12,6.94,18302,1280,536
+ANI-5981,Anime Series #1081,"Mystery, Psychological",TV,12,7.97,7863,452,333
+ANI-5982,Anime Series #1082,"Fantasy, Sci-Fi",TV,24,7.99,9748,438,545
+ANI-5983,Anime Series #1083,"Drama, Romance",Special,100,7.72,136846,9360,361
+ANI-5984,Anime Series #1084,"Drama, Romance",Movie,12,6.52,30831,2046,1058
+ANI-5985,Anime Series #1085,"Action, Adventure",TV,24,7.1,26302,272,616
+ANI-5986,Anime Series #1086,"Action, Adventure",TV,24,8.39,4069,177,983
+ANI-5987,Anime Series #1087,"Mystery, Psychological",Movie,12,5.32,66585,862,1118
+ANI-5988,Anime Series #1088,"Mystery, Psychological",OVA,12,7.41,59815,1884,50
+ANI-5989,Anime Series #1089,"Mystery, Psychological",TV,24,8.03,24059,1594,1121
+ANI-5990,Anime Series #1090,"Comedy, Slice of Life",TV,24,7.68,59344,4515,594
+ANI-5991,Anime Series #1091,"Comedy, Slice of Life",Movie,12,9.48,23399,630,340
+ANI-5992,Anime Series #1092,"Drama, Romance",TV,12,5.43,4298,49,65
+ANI-5993,Anime Series #1093,"Action, Adventure",TV,12,5.9,67489,2575,281
+ANI-5994,Anime Series #1094,"Fantasy, Sci-Fi",TV,24,7.4,168408,5634,498
+ANI-5995,Anime Series #1095,"Action, Adventure",TV,24,8.23,52747,3027,464
+ANI-5996,Anime Series #1096,"Comedy, Slice of Life",TV,24,7.26,16680,744,145
+ANI-5997,Anime Series #1097,"Drama, Romance",OVA,24,8.65,16230,615,206
+ANI-5998,Anime Series #1098,"Fantasy, Sci-Fi",TV,100,6.57,132737,3460,752
+ANI-5999,Anime Series #1099,"Mystery, Psychological",Special,1,6.9,18569,1262,64
+ANI-6000,Anime Series #1100,"Mystery, Psychological",OVA,24,8.04,73592,2015,458
+ANI-6001,Anime Series #1101,"Comedy, Slice of Life",Movie,24,6.81,51989,719,227
+ANI-6002,Anime Series #1102,"Drama, Romance",TV,12,8.23,45398,2248,75
+ANI-6003,Anime Series #1103,"Action, Adventure",OVA,12,7.96,10488,337,825
+ANI-6004,Anime Series #1104,"Comedy, Slice of Life",Special,24,6.74,2250,134,22
+ANI-6005,Anime Series #1105,"Action, Adventure",TV,1,7.53,34037,533,889
+ANI-6006,Anime Series #1106,"Fantasy, Sci-Fi",TV,12,6.67,222307,17260,116
+ANI-6007,Anime Series #1107,"Action, Adventure",TV,26,6.22,11392,262,605
+ANI-6008,Anime Series #1108,"Fantasy, Sci-Fi",TV,1,6.77,38987,1364,1104
+ANI-6009,Anime Series #1109,"Drama, Romance",TV,26,7.0,56081,2448,52
+ANI-6010,Anime Series #1110,"Comedy, Slice of Life",TV,26,7.32,33551,2426,335
+ANI-6011,Anime Series #1111,"Action, Adventure",TV,12,7.08,35855,2172,597
+ANI-6012,Anime Series #1112,"Drama, Romance",TV,12,5.27,54621,1099,175
+ANI-6013,Anime Series #1113,"Drama, Romance",OVA,12,8.29,84844,3453,751
+ANI-6014,Anime Series #1114,"Action, Adventure",OVA,26,5.33,20769,996,578
+ANI-6015,Anime Series #1115,"Mystery, Psychological",Special,12,7.41,115268,6817,1060
+ANI-6016,Anime Series #1116,"Mystery, Psychological",TV,12,6.38,33669,1684,137
+ANI-6017,Anime Series #1117,"Fantasy, Sci-Fi",TV,24,7.36,54717,2298,294
+ANI-6018,Anime Series #1118,"Drama, Romance",OVA,24,6.95,6131,389,15
+ANI-6019,Anime Series #1119,"Comedy, Slice of Life",Movie,24,7.58,34410,1254,950
+ANI-6020,Anime Series #1120,"Comedy, Slice of Life",TV,1,7.77,1311,103,864
+ANI-6021,Anime Series #1121,"Drama, Romance",TV,12,8.34,25298,1931,1120
+ANI-6022,Anime Series #1122,"Mystery, Psychological",Special,24,8.05,3301,196,497
+ANI-6023,Anime Series #1123,"Drama, Romance",TV,24,7.25,114142,8193,247
+ANI-6024,Anime Series #1124,"Fantasy, Sci-Fi",TV,12,8.24,56359,2114,1164
+ANI-6025,Anime Series #1125,"Drama, Romance",TV,24,6.64,78981,4004,309
+ANI-6026,Anime Series #1126,"Action, Adventure",Special,24,9.05,32025,931,518
+ANI-6027,Anime Series #1127,"Mystery, Psychological",TV,24,6.55,95992,6910,982
+ANI-6028,Anime Series #1128,"Action, Adventure",Movie,12,6.68,103694,4455,1100
+ANI-6029,Anime Series #1129,"Action, Adventure",TV,26,5.2,22566,1072,870
+ANI-6030,Anime Series #1130,"Drama, Romance",TV,100,6.47,24148,1702,290
+ANI-6031,Anime Series #1131,"Drama, Romance",TV,12,6.91,35988,2368,975
+ANI-6032,Anime Series #1132,"Comedy, Slice of Life",TV,12,6.9,2658,86,1083
+ANI-6033,Anime Series #1133,"Action, Adventure",Special,24,9.05,273757,4412,190
+ANI-6034,Anime Series #1134,"Drama, Romance",OVA,12,7.84,22750,485,504
+ANI-6035,Anime Series #1135,"Comedy, Slice of Life",TV,24,8.23,32323,1090,266
+ANI-6036,Anime Series #1136,"Action, Adventure",TV,12,7.2,70775,2220,1092
+ANI-6037,Anime Series #1137,"Comedy, Slice of Life",TV,100,6.43,18156,230,268
+ANI-6038,Anime Series #1138,"Mystery, Psychological",OVA,12,9.6,11759,473,739
+ANI-6039,Anime Series #1139,"Fantasy, Sci-Fi",TV,1,7.09,7316,127,46
+ANI-6040,Anime Series #1140,"Action, Adventure",TV,12,,38040,968,1040
+ANI-6041,Anime Series #1141,"Drama, Romance",TV,12,6.16,775,50,1190
+ANI-6042,Anime Series #1142,"Mystery, Psychological",TV,12,5.91,62311,2781,710
+ANI-6043,Anime Series #1143,"Comedy, Slice of Life",TV,50,8.85,31438,1135,30
+ANI-6044,Anime Series #1144,"Fantasy, Sci-Fi",TV,24,7.68,38445,883,1180
+ANI-6045,Anime Series #1145,"Action, Adventure",TV,24,6.96,15772,1114,899
+ANI-6046,Anime Series #1146,"Fantasy, Sci-Fi",OVA,12,6.99,10316,755,765
+ANI-6047,Anime Series #1147,"Mystery, Psychological",Special,12,6.06,60696,2810,176
+ANI-6048,Anime Series #1148,"Fantasy, Sci-Fi",TV,24,6.58,12303,916,338
+ANI-6049,Anime Series #1149,"Action, Adventure",TV,24,7.67,76225,3242,26
+ANI-6050,Anime Series #1150,"Mystery, Psychological",Movie,12,7.25,11887,208,810
+ANI-6051,Anime Series #1151,"Comedy, Slice of Life",Movie,12,8.03,47925,536,422
+ANI-6052,Anime Series #1152,"Action, Adventure",TV,24,4.19,52123,989,1087
+ANI-6053,Anime Series #1153,"Fantasy, Sci-Fi",TV,12,7.39,35725,1914,882
+ANI-6054,Anime Series #1154,"Action, Adventure",OVA,26,8.06,287586,9336,219
+ANI-6055,Anime Series #1155,"Mystery, Psychological",TV,12,4.77,24067,1332,453
+ANI-6056,Anime Series #1156,"Fantasy, Sci-Fi",TV,24,6.06,107916,4916,770
+ANI-6057,Anime Series #1157,"Comedy, Slice of Life",Movie,24,5.61,9770,325,1081
+ANI-6058,Anime Series #1158,"Drama, Romance",TV,24,8.63,21064,533,287
+ANI-6059,Anime Series #1159,"Comedy, Slice of Life",Movie,24,7.28,8354,130,157
+ANI-6060,Anime Series #1160,"Action, Adventure",OVA,26,7.36,46769,3029,18
+ANI-6061,Anime Series #1161,"Drama, Romance",TV,24,8.45,51341,3456,886
+ANI-6062,Anime Series #1162,"Mystery, Psychological",OVA,26,7.08,30711,1471,872
+ANI-6063,Anime Series #1163,"Fantasy, Sci-Fi",TV,24,6.49,64177,1347,474
+ANI-6064,Anime Series #1164,"Fantasy, Sci-Fi",OVA,12,7.39,101616,2890,815
+ANI-6065,Anime Series #1165,"Mystery, Psychological",Movie,12,7.67,75430,5797,8
+ANI-6066,Anime Series #1166,"Action, Adventure",TV,12,5.96,14331,369,942
+ANI-6067,Anime Series #1167,"Comedy, Slice of Life",TV,12,8.92,19812,276,85
+ANI-6068,Anime Series #1168,"Drama, Romance",TV,24,,24424,1184,73
+ANI-6069,Anime Series #1169,"Mystery, Psychological",Special,24,7.56,11893,336,373
+ANI-6070,Anime Series #1170,"Action, Adventure",TV,24,9.04,22911,1764,1019
+ANI-6071,Anime Series #1171,"Action, Adventure",TV,24,7.33,14093,707,823
+ANI-6072,Anime Series #1172,"Drama, Romance",Special,24,4.94,273281,21208,479
+ANI-6073,Anime Series #1173,"Mystery, Psychological",TV,12,8.84,76950,5001,1151
+ANI-6074,Anime Series #1174,"Comedy, Slice of Life",TV,12,6.67,98811,5989,1140
+ANI-6075,Anime Series #1175,"Comedy, Slice of Life",OVA,24,8.06,128146,8730,111
+ANI-6076,Anime Series #1176,"Mystery, Psychological",Special,12,7.66,55181,2888,126
+ANI-6077,Anime Series #1177,"Fantasy, Sci-Fi",TV,12,7.18,10177,109,24
+ANI-6078,Anime Series #1178,"Comedy, Slice of Life",TV,12,4.94,71549,2681,224
+ANI-6079,Anime Series #1179,"Fantasy, Sci-Fi",Special,12,7.65,1286,32,364
+ANI-6080,Anime Series #1180,"Mystery, Psychological",TV,12,8.01,6508,262,527
+ANI-6081,Anime Series #1181,"Action, Adventure",TV,12,5.44,2001,85,660
+ANI-6082,Anime Series #1182,"Mystery, Psychological",TV,12,9.04,7777,147,517
+ANI-6083,Anime Series #1183,"Action, Adventure",TV,12,6.78,70217,817,826
+ANI-6084,Anime Series #1184,"Mystery, Psychological",TV,26,9.2,108850,2141,1098
+ANI-6085,Anime Series #1185,"Fantasy, Sci-Fi",Movie,12,7.93,16844,1179,614
+ANI-6086,Anime Series #1186,"Fantasy, Sci-Fi",TV,24,7.23,6842,430,743
+ANI-6087,Anime Series #1187,"Mystery, Psychological",OVA,12,7.32,16438,1083,873
+ANI-6088,Anime Series #1188,"Action, Adventure",TV,100,8.28,52580,1542,460
+ANI-6089,Anime Series #1189,"Mystery, Psychological",TV,24,8.88,22054,585,374
+ANI-6090,Anime Series #1190,"Action, Adventure",TV,12,6.13,162897,2055,837
+ANI-6091,Anime Series #1191,"Fantasy, Sci-Fi",OVA,12,6.54,7519,323,466
+ANI-6092,Anime Series #1192,"Drama, Romance",TV,12,9.02,232501,8548,900
+ANI-6093,Anime Series #1193,"Comedy, Slice of Life",TV,26,6.23,1126,77,303
+ANI-6094,Anime Series #1194,"Fantasy, Sci-Fi",Special,24,7.22,30545,1763,430
+ANI-6095,Anime Series #1195,"Mystery, Psychological",Special,12,6.44,15005,301,735
+ANI-6096,Anime Series #1196,"Mystery, Psychological",TV,100,8.01,42268,3343,805
+ANI-6097,Anime Series #1197,"Action, Adventure",TV,12,4.49,5576,356,215
+ANI-6098,Anime Series #1198,"Comedy, Slice of Life",Movie,24,8.01,104802,6331,117
+ANI-6099,Anime Series #1199,"Fantasy, Sci-Fi",Movie,50,8.48,7839,197,896
+ANI-6100,Anime Series #1200,"Comedy, Slice of Life",Special,26,7.92,44762,3283,88
+ANI-6101,Anime Series #1201,"Comedy, Slice of Life",TV,24,6.29,2195,94,108
+ANI-6102,Anime Series #1202,"Fantasy, Sci-Fi",TV,50,3.3,19125,589,789
+ANI-6103,Anime Series #1203,"Action, Adventure",Movie,1,6.45,8609,480,339
+ANI-6104,Anime Series #1204,"Action, Adventure",TV,100,7.92,190988,4740,1148
+ANI-6105,Anime Series #1205,"Action, Adventure",Movie,12,7.17,1104,81,477
+ANI-6106,Anime Series #1206,"Drama, Romance",OVA,12,8.17,22223,1551,993
+ANI-6107,Anime Series #1207,"Comedy, Slice of Life",TV,12,6.96,18532,788,1154
+ANI-6108,Anime Series #1208,"Drama, Romance",TV,26,6.9,54055,1261,829
+ANI-6109,Anime Series #1209,"Action, Adventure",TV,12,8.96,3401,152,193
+ANI-6110,Anime Series #1210,"Fantasy, Sci-Fi",TV,12,6.44,83699,1710,327
+ANI-6111,Anime Series #1211,"Comedy, Slice of Life",TV,12,7.91,31917,922,987
+ANI-6112,Anime Series #1212,"Fantasy, Sci-Fi",Special,24,8.06,30644,1341,1173
+ANI-6113,Anime Series #1213,"Mystery, Psychological",TV,24,9.81,13360,153,431
+ANI-6114,Anime Series #1214,"Comedy, Slice of Life",TV,12,9.02,34171,2173,1185
+ANI-6115,Anime Series #1215,"Fantasy, Sci-Fi",TV,24,7.8,23119,549,1177
+ANI-6116,Anime Series #1216,"Action, Adventure",TV,12,7.98,14560,1028,384
+ANI-6117,Anime Series #1217,"Drama, Romance",TV,12,8.59,9736,112,369
+ANI-6118,Anime Series #1218,"Fantasy, Sci-Fi",Movie,1,6.49,65659,3102,169
+ANI-6119,Anime Series #1219,"Mystery, Psychological",Movie,24,9.14,8160,525,515
+ANI-6120,Anime Series #1220,"Action, Adventure",TV,12,7.17,9695,258,1147
+ANI-6121,Anime Series #1221,"Mystery, Psychological",TV,1,7.95,43527,2591,392
+ANI-6122,Anime Series #1222,"Drama, Romance",TV,12,7.6,13314,804,911
+ANI-6123,Anime Series #1223,"Mystery, Psychological",TV,24,6.37,31251,1707,693
+ANI-6124,Anime Series #1224,"Fantasy, Sci-Fi",TV,24,6.78,40750,1446,399
+ANI-6125,Anime Series #1225,"Fantasy, Sci-Fi",OVA,12,6.32,16539,1074,503
+ANI-6126,Anime Series #1226,"Action, Adventure",Movie,24,7.44,21545,1163,181
+ANI-6127,Anime Series #1227,"Drama, Romance",Special,12,5.51,12299,631,5
+ANI-6128,Anime Series #1228,"Drama, Romance",Movie,24,6.11,31348,2111,1110
+ANI-6129,Anime Series #1229,"Comedy, Slice of Life",TV,12,6.71,244479,6631,757
+ANI-6130,Anime Series #1230,"Comedy, Slice of Life",TV,24,7.03,23026,604,312
+ANI-6131,Anime Series #1231,"Fantasy, Sci-Fi",TV,24,8.8,53469,1981,400
+ANI-6132,Anime Series #1232,"Mystery, Psychological",Movie,24,8.29,51015,771,1023
+ANI-6133,Anime Series #1233,"Mystery, Psychological",TV,26,7.07,77701,2612,356
+ANI-6134,Anime Series #1234,"Action, Adventure",Movie,12,9.2,62725,2411,533
+ANI-6135,Anime Series #1235,"Drama, Romance",TV,12,7.57,1092,48,284
+ANI-6136,Anime Series #1236,"Fantasy, Sci-Fi",Special,12,7.94,18996,527,755
+ANI-6137,Anime Series #1237,"Mystery, Psychological",TV,1,5.12,102600,7538,222
+ANI-6138,Anime Series #1238,"Comedy, Slice of Life",TV,26,6.16,39277,1176,524
+ANI-6139,Anime Series #1239,"Fantasy, Sci-Fi",OVA,100,8.35,6003,417,782
+ANI-6140,Anime Series #1240,"Action, Adventure",TV,12,7.92,16657,685,10
+ANI-6141,Anime Series #1241,"Fantasy, Sci-Fi",OVA,24,9.17,17160,1034,881
+ANI-6142,Anime Series #1242,"Mystery, Psychological",TV,24,9.09,103748,1842,590
+ANI-6143,Anime Series #1243,"Action, Adventure",Movie,24,6.62,40804,1963,254
+ANI-6144,Anime Series #1244,"Comedy, Slice of Life",TV,24,8.47,47365,3659,1033
+ANI-6145,Anime Series #1245,"Comedy, Slice of Life",TV,12,6.12,23369,1323,423
+ANI-6146,Anime Series #1246,"Mystery, Psychological",Movie,24,5.45,3610,243,402
+ANI-6147,Anime Series #1247,"Action, Adventure",TV,26,7.55,4411,124,241
+ANI-6148,Anime Series #1248,"Comedy, Slice of Life",TV,12,8.04,27769,1833,1005
+ANI-6149,Anime Series #1249,"Action, Adventure",OVA,100,7.57,10269,355,25
+ANI-6150,Anime Series #1250,"Fantasy, Sci-Fi",Special,24,8.25,6005,263,179
+ANI-6151,Anime Series #1251,"Drama, Romance",TV,24,6.56,15707,363,91
+ANI-6152,Anime Series #1252,"Drama, Romance",TV,24,8.32,68248,3002,1102
+ANI-6153,Anime Series #1253,"Drama, Romance",Movie,24,6.63,4291,197,308
+ANI-6154,Anime Series #1254,"Comedy, Slice of Life",OVA,12,9.83,30230,1619,415
+ANI-6155,Anime Series #1255,"Mystery, Psychological",Special,24,8.14,87960,6227,814
+ANI-6156,Anime Series #1256,"Drama, Romance",TV,12,8.94,16093,504,1082
+ANI-6157,Anime Series #1257,"Mystery, Psychological",TV,1,5.83,18467,1456,2
+ANI-6158,Anime Series #1258,"Drama, Romance",TV,12,6.74,108297,7509,961
+ANI-6159,Anime Series #1259,"Fantasy, Sci-Fi",TV,12,7.11,52991,2024,435
+ANI-6160,Anime Series #1260,"Drama, Romance",TV,1,5.92,80403,2079,801
+ANI-6161,Anime Series #1261,"Mystery, Psychological",TV,12,8.98,17568,263,249
+ANI-6162,Anime Series #1262,"Comedy, Slice of Life",TV,12,7.26,287411,7589,652
+ANI-6163,Anime Series #1263,"Fantasy, Sci-Fi",TV,26,5.54,8093,582,947
+ANI-6164,Anime Series #1264,"Mystery, Psychological",OVA,12,6.65,163925,4990,563
+ANI-6165,Anime Series #1265,"Action, Adventure",Movie,12,5.96,116689,2293,262
+ANI-6166,Anime Series #1266,"Drama, Romance",TV,12,8.02,40636,470,454
+ANI-6167,Anime Series #1267,"Fantasy, Sci-Fi",OVA,50,7.87,44509,1372,949
+ANI-6168,Anime Series #1268,"Comedy, Slice of Life",Special,12,7.91,75093,1887,261
+ANI-6169,Anime Series #1269,"Action, Adventure",TV,24,8.28,18820,322,406
+ANI-6170,Anime Series #1270,"Drama, Romance",TV,12,9.62,37982,2908,716
+ANI-6171,Anime Series #1271,"Fantasy, Sci-Fi",TV,12,9.2,116831,3356,70
+ANI-6172,Anime Series #1272,"Mystery, Psychological",TV,12,6.71,4034,42,967
+ANI-6173,Anime Series #1273,"Drama, Romance",TV,1,9.54,118472,9015,323
+ANI-6174,Anime Series #1274,"Fantasy, Sci-Fi",TV,24,6.98,65740,3319,1021
+ANI-6175,Anime Series #1275,"Drama, Romance",TV,12,7.32,73950,1168,1080
+ANI-6176,Anime Series #1276,"Fantasy, Sci-Fi",TV,12,7.28,3845,46,130
+ANI-6177,Anime Series #1277,"Mystery, Psychological",TV,12,7.93,10897,191,237
+ANI-6178,Anime Series #1278,"Drama, Romance",TV,24,5.15,130188,6692,973
+ANI-6179,Anime Series #1279,"Fantasy, Sci-Fi",TV,12,7.23,7122,102,1094
+ANI-6180,Anime Series #1280,"Action, Adventure",TV,12,7.52,50372,2507,1106
+ANI-6181,Anime Series #1281,"Comedy, Slice of Life",TV,26,5.35,76822,4277,575
+ANI-6182,Anime Series #1282,"Fantasy, Sci-Fi",OVA,12,5.33,13651,277,1136
+ANI-6183,Anime Series #1283,"Fantasy, Sci-Fi",Movie,12,6.29,60497,2673,401
+ANI-6184,Anime Series #1284,"Fantasy, Sci-Fi",TV,12,6.39,3891,301,858
+ANI-6185,Anime Series #1285,"Drama, Romance",Special,12,7.25,35034,2401,271
+ANI-6186,Anime Series #1286,"Comedy, Slice of Life",Movie,12,7.05,20855,1264,156
+ANI-6187,Anime Series #1287,"Drama, Romance",TV,12,8.49,52386,2422,21
+ANI-6188,Anime Series #1288,"Fantasy, Sci-Fi",TV,24,6.78,110413,4151,1042
+ANI-6189,Anime Series #1289,"Fantasy, Sci-Fi",TV,24,6.8,7204,299,324
+ANI-6190,Anime Series #1290,"Comedy, Slice of Life",TV,24,8.3,30419,1932,121
+ANI-6191,Anime Series #1291,"Action, Adventure",TV,24,5.11,28012,1367,48
+ANI-6192,Anime Series #1292,"Drama, Romance",TV,26,9.15,20062,1274,848
+ANI-6193,Anime Series #1293,"Action, Adventure",OVA,12,5.53,33212,2586,1197
+ANI-6194,Anime Series #1294,"Fantasy, Sci-Fi",TV,12,8.32,106817,5857,828
+ANI-6195,Anime Series #1295,"Fantasy, Sci-Fi",TV,12,8.13,182337,9521,645
+ANI-6196,Anime Series #1296,"Mystery, Psychological",TV,100,8.92,642,24,7
+ANI-6197,Anime Series #1297,"Mystery, Psychological",Special,24,6.41,67667,1608,661
+ANI-6198,Anime Series #1298,"Action, Adventure",TV,12,7.25,48236,1745,922
+ANI-6199,Anime Series #1299,"Mystery, Psychological",TV,12,5.93,260760,12101,891

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoData Pipeline - Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#635bff',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 20px 40px -15px rgba(99, 91, 255, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between text-slate-800 bg-slate-50 relative overflow-x-hidden">
+
+    <!-- Decorative background blobs -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-200/50 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-200/50 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header matching user screenshot branding -->
+    <header class="w-full bg-white/80 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50 px-6 py-3.5 transition-all">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3.5">
+                <div class="w-10 h-10 bg-brand-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                    <i class="fa-solid fa-gear text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slate-900 tracking-tight leading-tight">AutoData Pipeline</h1>
+                    <p class="text-xs text-slate-500 font-medium">Interactive Data Mining &amp; Feature Engineering</p>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#docs" onclick="showToast('AutoData Pipeline v2.4 Documentation ready.'); return false;" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Documentation</a>
+                <a href="#support" onclick="showToast('Contact support: samidha@autodata.io'); return false;" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">Support</a>
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
+                    v2.4 Live
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container: Pure Login & Create Account -->
+    <main class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8 z-10">
+        <div class="w-full max-w-md">
+            
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-xl glow-effect overflow-hidden p-6 sm:p-8">
+                
+                <!-- Tab Switching: Sign In vs Create Account -->
+                <div class="flex bg-slate-100 p-1 rounded-xl mb-6">
+                    <button id="tab-signin" onclick="switchTab('signin')" class="flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-slate-800 shadow-sm transition-all duration-200">
+                        Sign In
+                    </button>
+                    <button id="tab-signup" onclick="switchTab('signup')" class="flex-1 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 transition-all duration-200">
+                        Create Account
+                    </button>
+                </div>
+
+                <div class="text-center mb-6">
+                    <h2 id="form-title" class="text-xl font-bold text-slate-900">Welcome Back</h2>
+                    <p id="form-subtitle" class="text-xs text-slate-500 mt-1">Sign in to access your automated pipelines and project datasets</p>
+                </div>
+
+                <form id="auth-form" onsubmit="handleAuthSubmit(event)" class="space-y-4">
+                    
+                    <!-- Full Name (Only visible on Create Account) -->
+                    <div id="field-fullname" class="hidden">
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Full Name</label>
+                        <div class="relative">
+                            <i class="fa-regular fa-user absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                            <input type="text" id="fullname-input" placeholder="Alex Morgan" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all">
+                        </div>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1.5">Email Address</label>
+                        <div class="relative">
+                            <i class="fa-regular fa-envelope absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                            <input type="email" id="email-input" required value="admin@autodata.io" placeholder="developer@autodata.io" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all">
+                        </div>
+                    </div>
+
+                    <!-- Password Input with Toggle -->
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <label class="block text-xs font-semibold text-slate-700">Password</label>
+                            <a href="#" id="forgot-link" onclick="handleForgotPassword(event)" class="text-xs font-semibold text-brand-600 hover:text-brand-700 hover:underline">Forgot password?</a>
+                        </div>
+                        <div class="relative">
+                            <i class="fa-solid fa-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                            <input type="password" id="password-input" required value="••••••••" placeholder="••••••••" class="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all">
+                            <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                                <i id="password-toggle-icon" class="fa-regular fa-eye text-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-1">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" checked class="w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500 cursor-pointer">
+                            <span class="text-xs text-slate-600 font-medium">Remember this device</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submit-btn" class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl text-sm shadow-md shadow-brand-500/30 hover:shadow-brand-500/50 active:scale-[0.99] transition-all duration-200 flex items-center justify-center space-x-2 mt-4">
+                        <span id="btn-text">Sign In &amp; Continue</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+
+                </form>
+
+                <div class="relative my-6">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-slate-200"></div>
+                    </div>
+                    <div class="relative flex justify-center text-xs uppercase">
+                        <span class="bg-white px-3 text-slate-400 font-semibold tracking-wider">Or continue with</span>
+                    </div>
+                </div>
+
+                <!-- Social Logins -->
+                <div class="grid grid-cols-2 gap-3">
+                    <button type="button" onclick="handleSocialAuth('Google')" class="flex items-center justify-center space-x-2 py-2.5 px-4 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50/80 rounded-xl text-xs font-semibold text-slate-700 shadow-sm transition-all">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
+                        <span>Google</span>
+                    </button>
+                    <button type="button" onclick="handleSocialAuth('GitHub')" class="flex items-center justify-center space-x-2 py-2.5 px-4 bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50/80 rounded-xl text-xs font-semibold text-slate-700 shadow-sm transition-all">
+                        <i class="fa-brands fa-github text-base text-slate-800"></i>
+                        <span>GitHub</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <p class="text-center text-xs text-slate-500 mt-6">
+                By continuing, you agree to AutoData Pipeline's 
+                <a href="#" class="underline hover:text-slate-800">Terms of Service</a> &amp; 
+                <a href="#" class="underline hover:text-slate-800">Privacy Policy</a>.
+            </p>
+
+        </div>
+    </main>
+
+    <footer class="w-full py-4 text-center text-xs text-slate-400 border-t border-slate-200/60 bg-white/50 backdrop-blur-sm z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div>© 2026 AutoData Pipeline Inc. All rights reserved.</div>
+            <div class="flex items-center space-x-4 text-slate-500">
+                <a href="#" class="hover:underline">Documentation</a>
+                <span>•</span>
+                <a href="#" class="hover:underline">API Reference</a>
+                <span>•</span>
+                <a href="#" class="hover:underline">System Status</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 transition-all duration-300 z-50">
+        <div id="toast-icon" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div id="toast-message" class="text-xs font-medium">Action completed successfully</div>
+    </div>
+
+    <script>
+        let currentTab = 'signin';
+
+        function switchTab(tab) {
+            currentTab = tab;
+            const tabSignin = document.getElementById('tab-signin');
+            const tabSignup = document.getElementById('tab-signup');
+            const fieldFullname = document.getElementById('field-fullname');
+            const formTitle = document.getElementById('form-title');
+            const formSubtitle = document.getElementById('form-subtitle');
+            const btnText = document.getElementById('btn-text');
+            const forgotLink = document.getElementById('forgot-link');
+
+            if (tab === 'signin') {
+                tabSignin.className = "flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-slate-800 shadow-sm transition-all duration-200";
+                tabSignup.className = "flex-1 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 transition-all duration-200";
+                fieldFullname.classList.add('hidden');
+                formTitle.textContent = "Welcome Back";
+                formSubtitle.textContent = "Sign in to access your automated pipelines and project datasets";
+                btnText.textContent = "Sign In & Continue";
+                forgotLink.classList.remove('invisible');
+            } else {
+                tabSignup.className = "flex-1 py-2 text-sm font-semibold rounded-lg bg-white text-slate-800 shadow-sm transition-all duration-200";
+                tabSignin.className = "flex-1 py-2 text-sm font-semibold rounded-lg text-slate-500 hover:text-slate-800 transition-all duration-200";
+                fieldFullname.classList.remove('hidden');
+                formTitle.textContent = "Create an Account";
+                formSubtitle.textContent = "Start automated data mining & feature engineering";
+                btnText.textContent = "Create Account & Continue";
+                forgotLink.classList.add('invisible');
+            }
+        }
+
+        function togglePasswordVisibility() {
+            const pwdInput = document.getElementById('password-input');
+            const pwdIcon = document.getElementById('password-toggle-icon');
+            if (pwdInput.type === 'password') {
+                pwdInput.type = 'text';
+                pwdIcon.className = 'fa-regular fa-eye-slash text-sm';
+            } else {
+                pwdInput.type = 'password';
+                pwdIcon.className = 'fa-regular fa-eye text-sm';
+            }
+        }
+
+        function handleAuthSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('email-input').value.trim();
+            const fullname = document.getElementById('fullname-input')?.value.trim() || 'Admin';
+            const submitBtn = document.getElementById('submit-btn');
+            
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75');
+            document.getElementById('btn-text').textContent = currentTab === 'signin' ? 'Signing in...' : 'Creating account...';
+
+            const userObj = {
+                email: email,
+                name: currentTab === 'signup' && fullname ? fullname : (email.split('@')[0] || 'Admin')
+            };
+
+            localStorage.setItem('autodata_user', JSON.stringify(userObj));
+
+            setTimeout(() => {
+                showToast(`Signed in successfully as ${userObj.name}!`);
+                setTimeout(() => {
+                    // Navigate to Page 2: Project Selection & Upload!
+                    window.location.href = '/projects.html';
+                }, 400);
+            }, 600);
+        }
+
+        function handleForgotPassword(event) {
+            event.preventDefault();
+            const email = document.getElementById('email-input').value;
+            if (!email) {
+                showToast("Please enter your email address first.", true);
+            } else {
+                showToast(`Password reset link sent to ${email}`);
+            }
+        }
+
+        function handleSocialAuth(provider) {
+            showToast(`Connecting via ${provider}...`);
+            const userObj = {
+                email: `developer@${provider.toLowerCase()}.com`,
+                name: provider === 'Google' ? 'Google Developer' : 'GitHub User'
+            };
+            localStorage.setItem('autodata_user', JSON.stringify(userObj));
+            setTimeout(() => {
+                window.location.href = '/projects.html';
+            }, 500);
+        }
+
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastMessage.textContent = message;
+            if (isError) {
+                toastIcon.className = "w-6 h-6 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center text-xs";
+                toastIcon.innerHTML = `<i class="fa-solid fa-exclamation"></i>`;
+            } else {
+                toastIcon.className = "w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs";
+                toastIcon.innerHTML = `<i class="fa-solid fa-check"></i>`;
+            }
+
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 2800);
+        }
+    </script>
+</body>
+</html>

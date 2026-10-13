@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoData Pipeline - Interactive Data Mining & Feature Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/notebook.css">
+  <style>
+    /* User profile dropdown menu */
+    .user-dropdown-menu {
+      position: absolute;
+      top: 56px;
+      right: 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      padding: 6px;
+      display: none;
+      flex-direction: column;
+      min-width: 170px;
+      z-index: 100;
+    }
+
+    .user-dropdown-menu.active {
+      display: flex;
+    }
+
+    .user-menu-item {
+      padding: 8px 12px;
+      font-size: 13px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-main);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.15s;
+    }
+
+    .user-menu-item:hover {
+      background-color: var(--bg-card-subtle);
+    }
+
+    .user-menu-item.logout {
+      color: var(--danger);
+      border-top: 1px solid var(--border-light);
+      margin-top: 4px;
+      padding-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= Top Navbar ================= -->
+  <header class="top-navbar">
+    <div class="brand-section">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+        </svg>
+      </div>
+      <div class="brand-info">
+        <h1>AutoData Pipeline</h1>
+        <span>Interactive Data Mining &amp; Feature Engineering</span>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <div class="project-selector" id="project-selector-btn" onclick="window.location.href='/projects.html'"
+        title="Switch or Upload Project">
+        <span id="project-name-display">Project: Customer Churn Analysis</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+      <button class="btn-new-project" id="btn-header-new-project" onclick="window.location.href='/projects.html'">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+        </svg>
+        <span>+ New Project</span>
+      </button>
+    </div>
+
+    <div class="nav-right" style="position:relative;">
+      <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+      <button class="icon-btn" id="notifications-btn" title="Notifications"
+        onclick="UI.showToast('All pipeline background workers operational.', 'info')">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+          <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+        </svg>
+        <div class="badge-dot"></div>
+      </button>
+      <div class="user-profile" id="user-profile-btn" onclick="App.toggleUserDropdown()">
+        <div class="avatar" id="user-avatar-initial">A</div>
+        <span class="user-name" id="user-display-name">Admin</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+
+      <!-- User Dropdown Menu with Log Out -->
+      <div class="user-dropdown-menu" id="user-dropdown-menu">
+        <div style="padding:6px 12px; font-size:11px; color:var(--text-muted); font-weight:600;" id="user-menu-email">
+          admin@autodata.io</div>
+        <div class="user-menu-item" onclick="window.location.href='/projects.html'">
+          <span>📁</span> Switch Project
+        </div>
+        <div class="user-menu-item logout" onclick="App.logout()">
+          <span>🚪</span> Sign Out
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= App Container ================= -->
+  <div class="app-container">
+
+    <!-- Sidebar (Left) -->
+    <aside class="sidebar">
+      <div class="sidebar-nav">
+        <div class="nav-item active" data-view="pipeline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="18" r="3" />
+            <circle cx="6" cy="6" r="3" />
+            <path d="M6 21V9a9 9 0 0 0 9 9" />
+          </svg>
+          <span>Pipeline</span>
+        </div>
+        <div class="nav-item" data-view="dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="9" />
+            <rect x="14" y="3" width="7" height="5" />
+            <rect x="14" y="12" width="7" height="9" />
+            <rect x="3" y="16" width="7" height="5" />
+          </svg>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item" data-view="dataset">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <line x1="3" y1="9" x2="21" y2="9" />
+            <line x1="9" y1="21" x2="9" y2="9" />
+          </svg>
+          <span>Dataset</span>
+        </div>
+        <div class="nav-item" data-view="notebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          <span>Notebook</span>
+        </div>
+        <div class="nav-item" data-view="reports">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+          </svg>
+          <span>Reports</span>
+        </div>
+        <div class="nav-item" onclick="window.location.href='/projects.html'">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+          <span>Upload / Projects</span>
+        </div>
+      </div>
+
+      <!-- Bottom Pipeline Progress Widget (Screenshot 1 & 2) -->
+      <div class="sidebar-footer">
+        <div class="pipeline-progress-card">
+          <div class="progress-header">
+            <span class="progress-title">Pipeline Progress</span>
+            <span class="progress-label" id="sidebar-step-counter">Step 6 of 10</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="sidebar-progress-fill" style="width: 60%;"></div>
+          </div>
+          <div class="autosave-status">
+            <div class="autosave-dot"></div>
+            <span>Auto-saved: Last saved just now</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Viewport -->
+    <main class="main-viewport">
+
+      <!-- ================= 1. Pipeline View (Screenshot 1) ================= -->
+      <div class="view-page active-view" id="view-pipeline">
+        <div class="pipeline-view-container">
+
+          <!-- Central Stage -->
+          <div class="step-center-stage">
+            <div class="step-stage-header">
+              <div class="step-title-area">
+                <h2 id="stage-step-title">Step 6: Feature Scaling <svg class="info-icon" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4M12 8h.01" />
+                  </svg></h2>
+                <p id="stage-step-desc">Scale numerical features to bring them to a common scale.</p>
+              </div>
+              <div class="stage-top-actions">
+                <span class="badge-pill-trusted"><span class="dot"></span> Trusted</span>
+                <button class="btn-secondary" onclick="App.switchView('reports')">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  Preview Report
+                </button>
+                <button class="btn-primary" onclick="App.downloadNotebook()">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+
+            <!-- Stage Tabs -->
+            <div class="stage-tabs">
+              <button class="tab-btn active-tab" id="tab-notebook-btn">Notebook</button>
+              <button class="tab-btn" id="tab-output-btn" onclick="App.switchView('dataset')">Output</button>
+            </div>
+
+            <!-- Jupyter Cell Component (Matching Screenshot 1) -->
+            <div class="notebook-container">
+              <div class="jupyter-cell active-cell">
+                <div class="cell-toolbar">
+                  <div class="cell-toolbar-left">
+                    <button class="cell-tool-btn" title="Run Cell" onclick="Pipeline.runActiveStep()">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                      </svg>
+                    </button>
+                    <button class="cell-tool-btn" title="Reset Step" onclick="Pipeline.resetCurrentStep()">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                        <path d="M3 3v5h5" />
+                      </svg>
+                    </button>
+                    <select class="cell-type-select">
+                      <option>Code</option>
+                      <option>Markdown</option>
+                    </select>
+                  </div>
+                  <div class="cell-toolbar-right">
+                    <span>Python 3</span>
+                    <div class="kernel-dot" title="Kernel Idle"></div>
+                  </div>
+                </div>
+
+                <!-- In [X] Code Input -->
+                <div class="cell-input-block">
+                  <div class="cell-prompt" id="cell-in-prompt">In [1]:</div>
+                  <div class="code-editor-wrapper">
+                    <pre class="code-display" id="cell-code-display"></pre>
+                  </div>
+                </div>
+
+                <!-- Out [X] Data Output (Dataframe Table) -->
+                <div class="cell-output-block">
+                  <div class="cell-prompt out" id="cell-out-prompt">Out [1]:</div>
+                  <div class="output-content-wrapper" id="cell-output-wrapper">
+                    <!-- Dataframe table rendered here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stepper Bottom Controls -->
+            <div class="stage-stepper-footer">
+              <button class="btn-secondary" id="btn-prev-step" onclick="Pipeline.previousStep()">
+                ← Previous Step
+              </button>
+              <div style="display:flex; gap:10px;">
+                <button class="btn-secondary" style="border-color:var(--primary); color:var(--primary);"
+                  onclick="Pipeline.runAllSteps()">
+                  ▶ Fast Run All
+                </button>
+                <button class="btn-primary" id="btn-next-step" onclick="Pipeline.nextStep()">
+                  Next Step →
+                </button>
+              </div>
+            </div>
+
+            <!-- Bottom Output Banner (Screenshot 1) -->
+            <div class="pipeline-output-banner">
+              <div class="output-banner-info">
+                <h4>Pipeline Output</h4>
+                <p>After completing all steps, you can download the final outputs.</p>
+              </div>
+              <div class="output-banner-actions">
+                <button class="download-dataset-btn" onclick="App.downloadCleanedDataset()">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  <div style="text-align:left;">
+                    <div style="font-weight:700;">Download Cleaned Dataset</div>
+                    <div style="font-size:11px; opacity:0.8;">cleaned_data.csv</div>
+                  </div>
+                </button>
+
+                <button class="download-notebook-btn" onclick="App.downloadNotebook()">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                  <div style="text-align:left;">
+                    <div style="font-weight:700;">Download Notebook</div>
+                    <div style="font-size:11px; opacity:0.8;">processed_pipeline.ipynb</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Inspector Panel (Screenshot 1) -->
+          <aside class="step-inspector-panel">
+            <div class="inspector-header">
+              <h3 id="inspector-step-title">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  style="color:var(--primary);">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                Step 6: Feature Scaling
+              </h3>
+            </div>
+
+            <!-- Recommendation Card -->
+            <div class="recommendation-card">
+              <div class="recom-badge-row">
+                <span class="recom-label">Recommendation</span>
+                <span class="ai-badge" id="inspector-ai-badge">AI Suggested</span>
+              </div>
+              <p class="recom-text" id="inspector-recom-text">StandardScaler is recommended for better model
+                performance.</p>
+            </div>
+
+            <!-- Selected Method -->
+            <div class="selected-method-card">
+              <div class="meta-field-label">Selected Method</div>
+              <div class="method-pill" id="inspector-method-pill">Standard Scaler</div>
+            </div>
+
+            <!-- Columns Affected -->
+            <div class="affected-columns-card">
+              <div class="meta-field-label">Columns Affected</div>
+              <div style="font-size:12px; color:var(--text-muted); font-weight:600;" id="inspector-affected-count">3
+                Numerical Columns</div>
+              <div class="tags-cloud" id="inspector-tags-cloud">
+                <span class="tag-pill">tenure</span>
+                <span class="tag-pill">MonthlyCharges</span>
+                <span class="tag-pill">TotalCharges</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons (Screenshot 1) -->
+            <div class="inspector-actions-group">
+              <button class="btn-accept-continue" onclick="Pipeline.acceptAndContinue()">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Accept & Continue
+              </button>
+              <button class="btn-modify-step" onclick="Pipeline.openModifyModal()">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                </svg>
+                Modify Step
+              </button>
+              <button class="btn-reset-step" onclick="Pipeline.rejectStep()">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                Reset / Reject Step
+              </button>
+            </div>
+
+            <!-- Stepper Checklist (10 steps) -->
+            <div class="stepper-checklist">
+              <div class="stepper-header">Pipeline Steps</div>
+              <div id="inspector-stepper-checklist">
+                <!-- 10 steps generated by JS -->
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+
+      <!-- ================= 2. Dashboard View (Screenshot 2) ================= -->
+      <div class="view-page" id="view-dashboard">
+        <div class="dashboard-container">
+
+          <div class="dashboard-hero">
+            <h2>Welcome, <span id="dash-user-welcome">Admin</span>! 👋</h2>
+            <p>Your automated data mining and feature engineering pipeline is ready.</p>
+          </div>
+
+          <!-- 4 KPI Cards (Screenshot 2) -->
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-icon blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <div class="kpi-details">
+                <div class="kpi-label">Dataset</div>
+                <div class="kpi-value" id="kpi-dataset-name">Telco Customer Churn.csv</div>
+                <div class="kpi-sub" id="kpi-dataset-sub">24,532 rows • 21 columns</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div class="kpi-details">
+                <div class="kpi-label">Target Column</div>
+                <div class="kpi-value" id="kpi-target-val">Churn</div>
+                <div class="kpi-sub" id="kpi-target-sub">Binary Classification</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div class="kpi-details">
+                <div class="kpi-label">Missing Values</div>
+                <div class="kpi-value" id="kpi-missing-val">2,345 (4.6%)</div>
+                <div class="kpi-sub">Across identified features</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <div class="kpi-details">
+                <div class="kpi-label">Data Types</div>
+                <div class="kpi-value" id="kpi-datatypes-val">14 Numerical</div>
+                <div class="kpi-sub" id="kpi-datatypes-sub">7 Categorical</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 Columns Layout -->
+          <div class="dashboard-columns">
+
+            <!-- Left: Pipeline Overview List -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">Pipeline Overview</div>
+                  <div class="panel-sub">This pipeline was auto-generated based on your dataset and problem objective.
+                  </div>
+                </div>
+                <div class="panel-actions">
+                  <button class="btn-secondary" onclick="App.switchView('notebook')">View as Notebook</button>
+                  <button class="btn-primary" onclick="Pipeline.runAllSteps()">
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    Run All
+                  </button>
+                </div>
+              </div>
+
+              <div class="pipeline-overview-list" id="dashboard-pipeline-list">
+                <!-- Rows dynamically rendered by JS -->
+              </div>
+            </div>
+
+            <!-- Right: Insights & Donut Summary -->
+            <div class="dashboard-right-col">
+
+              <div class="panel-card">
+                <div class="panel-header">
+                  <div class="panel-title" style="display:flex; align-items:center; gap:8px;">
+                    <span>💡</span> Insights & Recommendations
+                  </div>
+                </div>
+
+                <div class="insight-card">
+                  <div class="insight-title">Missing Values</div>
+                  <div class="insight-desc">Detected incomplete entries in features. Statistical Mean/Mode imputation
+                    applied for stability.</div>
+                </div>
+
+                <div class="insight-card">
+                  <div class="insight-title">Target Imbalance</div>
+                  <div class="insight-desc">Target distribution shows positive outcome frequency. Stratified split and
+                    F1 metrics recommended.</div>
+                </div>
+
+                <div class="insight-card">
+                  <div class="insight-title">Identifier Redundancy</div>
+                  <div class="insight-desc">Entity ID features isolated and dropped based on user objective to prevent
+                    overfitting.</div>
+                </div>
+              </div>
+
+              <!-- Dataset Summary with Donut Chart -->
+              <div class="panel-card">
+                <div class="panel-title">Dataset Summary</div>
+
+                <div class="donut-chart-container">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--teal)" stroke-width="12" />
+                    <circle id="donut-svg-fill" cx="50" cy="50" r="40" fill="transparent" stroke="var(--primary)"
+                      stroke-width="12" stroke-dasharray="160 251.2" transform="rotate(-90 50 50)" />
+                  </svg>
+                  <div style="font-size:12.5px;">
+                    <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+                      <span
+                        style="width:10px; height:10px; border-radius:50%; background:var(--primary); display:inline-block;"></span>
+                      <span>Numerical: <strong id="donut-num-pct">14 (66.7%)</strong></span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:6px;">
+                      <span
+                        style="width:10px; height:10px; border-radius:50%; background:var(--teal); display:inline-block;"></span>
+                      <span>Categorical: <strong id="donut-cat-pct">7 (33.3%)</strong></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="display:flex; justify-content:space-between; border-top:1px solid var(--border-color); padding-top:12px; font-size:12px; color:var(--text-muted);">
+                  <div>Rows: <strong style="color:var(--text-main);" id="ds-stat-rows">24,532</strong></div>
+                  <div>Columns: <strong style="color:var(--text-main);" id="ds-stat-cols">21</strong></div>
+                  <div>Memory: <strong style="color:var(--text-main);" id="ds-stat-mem">12.45 MB</strong></div>
+                </div>
+              </div>
+
+              <!-- Quick Actions -->
+              <div class="panel-card">
+                <div class="panel-title" style="margin-bottom:14px;">Quick Actions</div>
+                <button class="quick-action-btn" onclick="App.downloadCleanedDataset()">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  <span>Download Cleaned Dataset</span>
+                </button>
+                <button class="quick-action-btn" onclick="App.downloadNotebook()">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                  <span>Download Notebook (.ipynb)</span>
+                </button>
+                <button class="quick-action-btn" onclick="App.downloadReport()">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  <span>Download Report (HTML/PDF)</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= 3. Dataset View ================= -->
+      <div class="view-page" id="view-dataset">
+        <div style="padding: 28px 32px; display:flex; flex-direction:column; gap:20px; flex:1;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h2 style="font-size:20px; font-weight:700;">Dataset Explorer</h2>
+              <p style="font-size:13px; color:var(--text-muted);">Inspect transformed data rows and column distribution.
+              </p>
+            </div>
+            <button class="btn-primary" onclick="App.downloadCleanedDataset()">Download CSV</button>
+          </div>
+          <div class="panel-card" style="flex:1; overflow:auto;">
+            <div id="dataset-table-container"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 4. Notebook Full View ================= -->
+      <div class="view-page" id="view-notebook">
+        <div style="padding: 28px 32px; max-width:1100px; margin:0 auto; width:100%;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+            <div>
+              <h2 style="font-size:22px; font-weight:700;">Complete Pipeline Notebook</h2>
+              <p style="font-size:13px; color:var(--text-muted);">Every data mining and feature engineering step as a
+                clean, reproducible Jupyter Cell.</p>
+            </div>
+            <button class="btn-primary" onclick="App.downloadNotebook()">Download .ipynb</button>
+          </div>
+          <div id="full-notebook-container"></div>
+        </div>
+      </div>
+
+      <!-- ================= 5. Reports View ================= -->
+      <div class="view-page" id="view-reports">
+        <div style="padding: 28px 32px; max-width:1100px; margin:0 auto; width:100%;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+            <div>
+              <h2 style="font-size:22px; font-weight:700;">Pipeline Execution Audit Report</h2>
+              <p style="font-size:13px; color:var(--text-muted);">Comprehensive data quality transformation audit and
+                feature impact summary.</p>
+            </div>
+            <button class="btn-primary" onclick="App.downloadReport()">Open Full Report</button>
+          </div>
+
+          <div class="panel-card" style="margin-bottom:24px;">
+            <div class="panel-title" style="margin-bottom:16px;">Before vs After Transformation Audit</div>
+            <table class="dataframe-table" style="text-align:left;">
+              <thead>
+                <tr>
+                  <th style="text-align:left;">Metric</th>
+                  <th style="text-align:left;">Initial Raw Dataset</th>
+                  <th style="text-align:left;">Processed Pipeline Dataset</th>
+                  <th style="text-align:left;">Status</th>
+                </tr>
+              </thead>
+              <tbody id="report-audit-table">
+                <!-- Dynamically filled -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ================= Upload Dataset & Prompt Modal ================= -->
+  <div class="modal-overlay" id="upload-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Upload Dataset & Configure Objective</h3>
+        <button class="modal-close-btn" onclick="App.closeUploadModal()">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <!-- File Drag & Drop Zone -->
+        <div class="dropzone" id="upload-dropzone">
+          <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="17 8 12 3 7 8" />
+            <line x1="12" y1="3" x2="12" y2="15" />
+          </svg>
+          <h4>Drop your dataset here or click to browse</h4>
+          <p>Supports CSV, JSON, XML, Excel (.xlsx)</p>
+          <div id="selected-file-name" style="margin-top:8px; font-weight:600; color:var(--primary); font-size:13px;">
+          </div>
+          <input type="file" id="file-upload-input" accept=".csv,.json,.xml,.xlsx,.xls" style="display:none;">
+        </div>
+
+        <!-- Sample Datasets Quick Access -->
+        <div>
+          <label style="font-size:12.5px; font-weight:600; color:var(--text-muted); text-transform:uppercase;">Or load
+            pre-built demo dataset:</label>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px;">
+            <button class="btn-secondary" onclick="App.loadSampleDataset('customer_churn')">
+              👥 Telco Churn
+            </button>
+            <button class="btn-secondary" onclick="App.loadSampleDataset('anime')">
+              🎬 Anime Dataset
+            </button>
+            <button class="btn-secondary" onclick="App.loadSampleDataset('sales_forecasting')">
+              📈 Sales Forecasting
+            </button>
+            <button class="btn-secondary" onclick="App.loadSampleDataset('house_prices')">
+              🏠 House Prices
+            </button>
+          </div>
+        </div>
+
+        <!-- Purpose / Prompt Textarea -->
+        <div>
+          <label style="font-size:13px; font-weight:600;">Purpose & Objective Prompt:</label>
+          <p style="font-size:12px; color:var(--text-muted); margin-bottom:6px;">
+            Describe the modeling goal so the automated pipeline intelligently adapts feature selection, encoding, and
+            scaling:
+          </p>
+          <textarea class="prompt-textarea" id="prompt-text-input"
+            placeholder="e.g., Predict customer churn and identify key driver features. Scale numerical columns using StandardScaler, drop customer ID, and handle missing values."></textarea>
+
+          <div class="prompt-chips">
+            <span class="prompt-chip"
+              onclick="App.setPromptChip('Predict customer churn and highlight key risk factors, drop customer ID and scale numeric charges')">🎯
+              Churn Classification</span>
+            <span class="prompt-chip"
+              onclick="App.setPromptChip('Forecast house sale price based on square feet and bedrooms, treat outliers and scale numeric features')">📈
+              House Price Regression</span>
+            <span class="prompt-chip"
+              onclick="App.setPromptChip('Predict anime rating based on genres and popularity, drop anime ID')">🎬 Anime
+              Rating</span>
+            <span class="prompt-chip"
+              onclick="App.setPromptChip('Forecast store weekly sales based on department, CPI and unemployment')">📊
+              Sales Prediction</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="App.closeUploadModal()">Cancel</button>
+        <button class="btn-primary" onclick="App.submitUpload()">Generate Automated Pipeline ⚡</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Modify Step Modal ================= -->
+  <div class="modal-overlay" id="modify-step-modal">
+    <div class="modal-content" style="max-width:500px;">
+      <div class="modal-header">
+        <h3 id="modify-modal-title">Modify Step</h3>
+        <button class="modal-close-btn" onclick="Pipeline.closeModifyModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modify-modal-content">
+        <!-- Injected dynamically by Pipeline.openModifyModal() -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="Pipeline.closeModifyModal()">Cancel</button>
+        <button class="btn-primary" onclick="Pipeline.applyStepModification()">Apply & Re-Run Step</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/ui.js"></script>
+  <script src="js/pipeline.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
