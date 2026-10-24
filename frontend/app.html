@@ -362,8 +362,28 @@
                 <span class="recom-label">Recommendation</span>
                 <span class="ai-badge" id="inspector-ai-badge">AI Suggested</span>
               </div>
-              <p class="recom-text" id="inspector-recom-text">StandardScaler is recommended for better model
-                performance.</p>
+              <p class="recom-text" id="inspector-recom-text">StandardScaler is recommended for better model performance.</p>
+
+              <!-- Recommended Model Section -->
+              <div class="recom-model-card" id="inspector-model-recom-card">
+                <div class="recom-model-header">
+                  <div class="recom-model-title">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" style="color:var(--primary);">
+                      <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+                      <path d="M12 12L2.1 12a10 10 0 0 0 9.9 10V12z" />
+                    </svg>
+                    <span>Recommended Model to Use</span>
+                  </div>
+                  <span class="recom-model-tag" id="inspector-model-badge">XGBoost / Random Forest</span>
+                </div>
+                <div class="recom-model-rationale" id="inspector-model-rationale">
+                  Optimal for tabular classification with non-linear feature interactions and high predictive stability.
+                </div>
+                <div class="recom-model-metric-row" id="inspector-model-metric-row">
+                  <span class="recom-metric-label">Evaluation Metric:</span>
+                  <span class="recom-metric-val" id="inspector-model-metric-val">F1-Score & ROC-AUC</span>
+                </div>
+              </div>
             </div>
 
             <!-- Selected Method -->
@@ -399,7 +419,7 @@
                 </svg>
                 Modify Step
               </button>
-              <button class="btn-reset-step" onclick="Pipeline.rejectStep()">
+              <button class="btn-reset-step" onclick="Pipeline.openRejectModal()">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
@@ -407,6 +427,7 @@
                 Reset / Reject Step
               </button>
             </div>
+
 
             <!-- Stepper Checklist (10 steps) -->
             <div class="stepper-checklist">
@@ -527,6 +548,16 @@
                   </div>
                 </div>
 
+                <div class="insight-card" style="border-left: 3px solid var(--primary); background: var(--bg-card-subtle);">
+                  <div class="insight-title" style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="display:flex; align-items:center; gap:6px;">🤖 <strong>Recommended ML Model</strong></span>
+                    <span class="ai-badge" style="background:var(--primary-light); color:var(--primary);" id="dash-recom-model-badge">XGBoost / Random Forest</span>
+                  </div>
+                  <div class="insight-desc" id="dash-recom-model-desc">
+                    Target classification: Gradient boosting and ensemble tree models recommended for maximum predictive accuracy and feature importance interpretability.
+                  </div>
+                </div>
+
                 <div class="insight-card">
                   <div class="insight-title">Missing Values</div>
                   <div class="insight-desc">Detected incomplete entries in features. Statistical Mean/Mode imputation
@@ -545,6 +576,7 @@
                     overfitting.</div>
                 </div>
               </div>
+
 
               <!-- Dataset Summary with Donut Chart -->
               <div class="panel-card">
@@ -757,7 +789,7 @@
 
   <!-- ================= Modify Step Modal ================= -->
   <div class="modal-overlay" id="modify-step-modal">
-    <div class="modal-content" style="max-width:500px;">
+    <div class="modal-content" style="max-width:680px; width:92%;">
       <div class="modal-header">
         <h3 id="modify-modal-title">Modify Step</h3>
         <button class="modal-close-btn" onclick="Pipeline.closeModifyModal()">✕</button>
@@ -771,6 +803,38 @@
       </div>
     </div>
   </div>
+
+  <!-- ================= Reset / Reject Step Modal ================= -->
+  <div class="modal-overlay" id="reject-step-modal">
+    <div class="modal-content" style="max-width:520px; width:90%;">
+      <div class="modal-header">
+        <h3 id="reject-modal-title" style="display:flex; align-items:center; gap:8px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--danger);">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          Reset / Reject Step
+        </h3>
+        <button class="modal-close-btn" onclick="Pipeline.closeRejectModal()">✕</button>
+      </div>
+      <div class="modal-body" id="reject-modal-content">
+        <!-- Injected dynamically by Pipeline.openRejectModal() -->
+      </div>
+      <div class="modal-footer" style="display:flex; justify-content:space-between; align-items:center;">
+        <button class="btn-secondary" onclick="Pipeline.closeRejectModal()">Cancel</button>
+        <div style="display:flex; gap:10px;">
+          <button class="btn-secondary" style="color:var(--text-main); border-color:var(--border-color);" onclick="Pipeline.confirmResetStep()">
+            ↺ Reset to AI Defaults
+          </button>
+          <button class="btn-danger-confirm" onclick="Pipeline.confirmRejectStep()">
+            ⏭ Skip / Reject Step
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Scripts -->
   <script src="js/ui.js"></script>

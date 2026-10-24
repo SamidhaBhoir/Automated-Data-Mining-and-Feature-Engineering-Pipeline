@@ -68,15 +68,71 @@ const App = {
 
   async loadInitialSession() {
     try {
+      const userRaw = localStorage.getItem('autodata_user');
+      const user = userRaw ? JSON.parse(userRaw) : null;
       const savedSid = localStorage.getItem('pipeline_session_id');
-      const url = savedSid ? `/api/session?session_id=${savedSid}` : '/api/session';
+
+      const params = new URLSearchParams();
+      if (savedSid) params.append('session_id', savedSid);
+      if (user && user.id) params.append('user_id', user.id);
+      if (user && user.email) params.append('email', user.email);
+
+      const url = `/api/session?${params.toString()}`;
       const resp = await fetch(url);
       const data = await resp.json();
+      if (data && data.empty) {
+        UI.showToast("No active project found. Please upload a dataset to begin.", "info");
+        setTimeout(() => {
+          window.location.href = '/projects.html';
+        }, 500);
+        return;
+      }
       this.currentSession = data;
+      this.saveCurrentProjectHistory();
       this.updateUI();
     } catch (e) {
       console.error("Failed to load session:", e);
       UI.showToast("Server connection error: " + e.message, "error");
+    }
+  },
+
+  saveCurrentProjectHistory() {
+    if (!this.currentSession) return;
+    try {
+      const s = this.currentSession;
+      localStorage.setItem('pipeline_session_id', s.session_id);
+      
+      const userRaw = localStorage.getItem('autodata_user');
+      const user = userRaw ? JSON.parse(userRaw) : null;
+      
+      let key = 'custom_upload';
+      const pName = (s.project_name || '').toLowerCase();
+      if (pName.includes('churn')) key = 'customer_churn';
+      else if (pName.includes('anime')) key = 'anime';
+      else if (pName.includes('sales')) key = 'sales_forecasting';
+      else if (pName.includes('house')) key = 'house_prices';
+
+      const rows = s.overview?.total_rows || s.overview?.current_rows || '';
+      const stepIdx = (s.active_step_index !== undefined) ? s.active_step_index + 1 : 1;
+      const stepName = s.steps?.[s.active_step_index]?.name || 'in progress';
+      const meta = `${s.file_name} • ${rows ? rows.toLocaleString() + ' rows • ' : ''}Step ${stepIdx} (${stepName})`;
+
+      const historyItem = {
+        title: s.project_name,
+        fileName: s.file_name,
+        key: key,
+        sessionId: s.session_id,
+        time: 'Just now',
+        meta: meta
+      };
+
+      if (user && user.email) {
+        localStorage.setItem(`autodata_last_project_${user.email}`, JSON.stringify(historyItem));
+      }
+      localStorage.setItem('autodata_last_project_global', JSON.stringify(historyItem));
+      localStorage.setItem('autodata_last_project', JSON.stringify(historyItem));
+    } catch (e) {
+      console.warn("Could not save project history:", e);
     }
   },
 
@@ -107,8 +163,12 @@ const App = {
 
   async refreshDashboardOverview() {
     try {
-      const resp = await fetch(`/api/session?session_id=${this.currentSession.session_id}`);
+      const userRaw = localStorage.getItem('autodata_user');
+      const user = userRaw ? JSON.parse(userRaw) : null;
+      const uid = user?.id || '';
+      const resp = await fetch(`/api/session?session_id=${this.currentSession.session_id}&user_id=${encodeURIComponent(uid)}`);
       this.currentSession = await resp.json();
+      this.saveCurrentProjectHistory();
       this.renderDashboardOverview();
       this.renderReportsView();
     } catch (e) {
@@ -218,7 +278,19 @@ const App = {
 
     const dsMemEl = document.getElementById('ds-stat-mem');
     if (dsMemEl) dsMemEl.innerText = ov.memory_usage;
+
+    // Update Dashboard Model Recommendation
+    const modelInfo = s.recommended_model || s.config?.recommended_model || {
+      name: "XGBoost / Random Forest Classifier",
+      rationale: "Target classification: Gradient boosting and ensemble tree models recommended for maximum predictive accuracy and feature importance interpretability."
+    };
+    const dashModelBadge = document.getElementById('dash-recom-model-badge');
+    if (dashModelBadge) dashModelBadge.innerText = modelInfo.name || "XGBoost / Random Forest";
+
+    const dashModelDesc = document.getElementById('dash-recom-model-desc');
+    if (dashModelDesc) dashModelDesc.innerText = modelInfo.rationale || "Gradient boosting and ensemble tree models recommended for optimal tabular performance.";
   },
+
 
   // View Navigation
   switchView(viewName) {
@@ -365,9 +437,15 @@ const App = {
     this.closeUploadModal();
     UI.showToast(`Loading sample dataset '${sampleName}'...`, "info");
     try {
-      const resp = await fetch(`/api/sample?sample_name=${sampleName}`, { method: 'POST' });
+      const userRaw = localStorage.getItem('autodata_user');
+      const user = userRaw ? JSON.parse(userRaw) : null;
+      const uid = user?.id || '';
+      const email = user?.email || '';
+
+      const resp = await fetch(`/api/sample?sample_name=${encodeURIComponent(sampleName)}&user_id=${encodeURIComponent(uid)}&email=${encodeURIComponent(email)}`, { method: 'POST' });
       const data = await resp.json();
       this.currentSession = data;
+      this.saveCurrentProjectHistory();
       this.updateUI();
       UI.showToast(`Dataset '${sampleName}' loaded with automated pipeline!`, "success");
     } catch (e) {
@@ -382,13 +460,18 @@ const App = {
     const file = fileInput.files[0] || this.selectedFile;
 
     if (!file) {
-      UI.showToast("Please select a dataset file (CSV, JSON, XML).", "error");
+      UI.showToast("Please select a dataset file (CSV, JSON, XML, Excel).", "error");
       return;
     }
+
+    const userRaw = localStorage.getItem('autodata_user');
+    const user = userRaw ? JSON.parse(userRaw) : null;
 
     const formData = new FormData();
     formData.append('file', file);
     formData.append('prompt', promptInput.value || '');
+    if (user && user.id) formData.append('user_id', user.id);
+    if (user && user.email) formData.append('email', user.email);
 
     this.closeUploadModal();
     UI.showToast("Uploading dataset and analyzing intent with AI...", "info");
@@ -404,6 +487,7 @@ const App = {
       }
       const data = await resp.json();
       this.currentSession = data;
+      this.saveCurrentProjectHistory();
       this.updateUI();
       UI.showToast("Dataset analyzed and custom pipeline initialized!", "success");
       this.switchView('pipeline');
@@ -425,19 +509,28 @@ const App = {
   // Download Trigger Helpers
   downloadCleanedDataset() {
     const sessionId = this.currentSession?.session_id || 'default_session';
-    window.location.href = `/api/download/data?session_id=${sessionId}`;
+    const userRaw = localStorage.getItem('autodata_user');
+    const user = userRaw ? JSON.parse(userRaw) : null;
+    const uid = user?.id || '';
+    window.location.href = `/api/download/data?session_id=${sessionId}&user_id=${encodeURIComponent(uid)}`;
     UI.showToast("Downloading cleaned dataset (cleaned_data.csv)...", "success");
   },
 
   downloadNotebook() {
     const sessionId = this.currentSession?.session_id || 'default_session';
-    window.location.href = `/api/download/notebook?session_id=${sessionId}`;
+    const userRaw = localStorage.getItem('autodata_user');
+    const user = userRaw ? JSON.parse(userRaw) : null;
+    const uid = user?.id || '';
+    window.location.href = `/api/download/notebook?session_id=${sessionId}&user_id=${encodeURIComponent(uid)}`;
     UI.showToast("Downloading Jupyter Notebook (processed_pipeline.ipynb)...", "success");
   },
 
   downloadReport() {
     const sessionId = this.currentSession?.session_id || 'default_session';
-    window.open(`/api/download/report?session_id=${sessionId}`, '_blank');
+    const userRaw = localStorage.getItem('autodata_user');
+    const user = userRaw ? JSON.parse(userRaw) : null;
+    const uid = user?.id || '';
+    window.open(`/api/download/report?session_id=${sessionId}&user_id=${encodeURIComponent(uid)}`, '_blank');
   },
 
   setupEventListeners() {

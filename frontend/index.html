@@ -240,30 +240,49 @@
             }
         }
 
-        function handleAuthSubmit(event) {
+        async function handleAuthSubmit(event) {
             event.preventDefault();
             const email = document.getElementById('email-input').value.trim();
-            const fullname = document.getElementById('fullname-input')?.value.trim() || 'Admin';
+            const password = document.getElementById('password-input').value;
+            const fullname = document.getElementById('fullname-input')?.value.trim() || 'Data Scientist';
             const submitBtn = document.getElementById('submit-btn');
             
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75');
-            document.getElementById('btn-text').textContent = currentTab === 'signin' ? 'Signing in...' : 'Creating account...';
+            document.getElementById('btn-text').textContent = currentTab === 'signin' ? 'Verifying with database...' : 'Creating database account...';
 
-            const userObj = {
-                email: email,
-                name: currentTab === 'signup' && fullname ? fullname : (email.split('@')[0] || 'Admin')
-            };
+            try {
+                const endpoint = currentTab === 'signin' ? '/api/auth/login' : '/api/auth/register';
+                const payload = currentTab === 'signin' 
+                    ? { email: email, password: password } 
+                    : { email: email, name: fullname || email.split('@')[0], password: password };
 
-            localStorage.setItem('autodata_user', JSON.stringify(userObj));
+                const res = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
 
-            setTimeout(() => {
-                showToast(`Signed in successfully as ${userObj.name}!`);
+                const data = await res.json();
+                if (!res.ok) {
+                    throw new Error(data.detail || (currentTab === 'signin' ? 'Invalid credentials' : 'Registration failed'));
+                }
+
+                const userObj = data.user;
+                localStorage.setItem('autodata_user', JSON.stringify(userObj));
+
+                showToast(`Welcome ${userObj.name}! Authenticated via Database.`);
                 setTimeout(() => {
-                    // Navigate to Page 2: Project Selection & Upload!
                     window.location.href = '/projects.html';
                 }, 400);
-            }, 600);
+
+            } catch (err) {
+                console.error("Auth error:", err);
+                showToast(err.message, true);
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75');
+                document.getElementById('btn-text').textContent = currentTab === 'signin' ? 'Sign In & Continue' : 'Create Account & Continue';
+            }
         }
 
         function handleForgotPassword(event) {
@@ -272,20 +291,39 @@
             if (!email) {
                 showToast("Please enter your email address first.", true);
             } else {
-                showToast(`Password reset link sent to ${email}`);
+                showToast(`Database reset link sent to ${email}`);
             }
         }
 
-        function handleSocialAuth(provider) {
-            showToast(`Connecting via ${provider}...`);
-            const userObj = {
-                email: `developer@${provider.toLowerCase()}.com`,
-                name: provider === 'Google' ? 'Google Developer' : 'GitHub User'
-            };
-            localStorage.setItem('autodata_user', JSON.stringify(userObj));
-            setTimeout(() => {
-                window.location.href = '/projects.html';
-            }, 500);
+        async function handleSocialAuth(provider) {
+            showToast(`Authenticating via ${provider} with Database...`);
+            const socialEmail = `user.${provider.toLowerCase()}@autodata.io`;
+            const socialName = provider === 'Google' ? 'Google Developer' : 'GitHub Engineer';
+            try {
+                let res = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: socialEmail, password: 'social_login_pwd' })
+                });
+                let data = await res.json();
+                if (!res.ok) {
+                    // Try registering
+                    res = await fetch('/api/auth/register', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email: socialEmail, name: socialName, password: 'social_login_pwd' })
+                    });
+                    data = await res.json();
+                }
+                if (data.user) {
+                    localStorage.setItem('autodata_user', JSON.stringify(data.user));
+                    setTimeout(() => { window.location.href = '/projects.html'; }, 400);
+                }
+            } catch (e) {
+                const fallbackUser = { email: socialEmail, name: socialName, id: 'social-user-id' };
+                localStorage.setItem('autodata_user', JSON.stringify(fallbackUser));
+                setTimeout(() => { window.location.href = '/projects.html'; }, 400);
+            }
         }
 
         function showToast(message, isError = false) {

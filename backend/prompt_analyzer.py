@@ -40,14 +40,15 @@ def analyze_prompt_and_data(prompt: str, columns: List[str], dtypes: Dict[str, s
         target_column = columns[-1] if columns else None
 
     # 2. Detect Problem / Task Type
-    task_type = "classification"
-    if any(k in prompt_lower for k in ['regress', 'forecast', 'price', 'salary', 'cost', 'amount', 'continuous', 'value', 'numerical']):
-        task_type = "regression"
+    if any(k in prompt_lower for k in ['churn', 'fraud', 'classify', 'classification', 'categor', 'binary', 'multiclass', 'survived', 'default', 'attrition']):
+        task_type = "classification"
     elif any(k in prompt_lower for k in ['cluster', 'segment', 'group', 'unsupervised', 'k-means', 'kmeans']):
         task_type = "clustering"
         target_column = None
-    elif any(k in prompt_lower for k in ['classify', 'churn', 'fraud', 'detect', 'category', 'binary', 'multiclass', 'predict']):
-        task_type = "classification"
+    elif any(k in prompt_lower for k in ['regress', 'forecast', 'continuous']):
+        task_type = "regression"
+    elif any(k in prompt_lower for k in ['price', 'salary', 'cost', 'sales', 'revenue', 'expense', 'income', 'rating']) and not any(k in prompt_lower for k in ['churn', 'fraud', 'status']):
+        task_type = "regression"
     else:
         # Infer task type from target column dtype
         if target_column:
@@ -60,6 +61,9 @@ def analyze_prompt_and_data(prompt: str, columns: List[str], dtypes: Dict[str, s
                     task_type = "regression"
             else:
                 task_type = "classification"
+        else:
+            task_type = "classification"
+
 
     # 3. Identify Columns to Drop / Skip
     drop_columns = []
@@ -107,6 +111,51 @@ def analyze_prompt_and_data(prompt: str, columns: List[str], dtypes: Dict[str, s
     else:
         objective_summary = "Automated data mining, quality cleaning, and feature engineering exploration."
 
+    # 8. Machine Learning Model Recommendation
+    if task_type == "classification":
+        model_name = "XGBoost / Random Forest Classifier"
+        primary_model = "XGBoost Classifier"
+        baseline_model = "Logistic Regression"
+        eval_metric = "F1-Score & ROC-AUC"
+        model_rationale = (
+            f"For predicting target '{target_column}', ensemble gradient boosting (XGBoost/LightGBM) "
+            "and Random Forest are recommended to capture non-linear feature interactions, handle tabular skewness, "
+            "and prevent overfitting with class imbalance."
+        )
+    elif task_type == "regression":
+        model_name = "LightGBM / XGBoost Regressor"
+        primary_model = "LightGBM Regressor"
+        baseline_model = "Ridge / ElasticNet"
+        eval_metric = "RMSE & R² Score"
+        model_rationale = (
+            f"For forecasting continuous target '{target_column}', gradient boosting regressors "
+            "provide superior performance on structured numerical features, with Ridge Regression as an interpretable baseline."
+        )
+    elif task_type == "clustering":
+        model_name = "K-Means Clustering with Silhouette Analysis"
+        primary_model = "K-Means Clustering"
+        baseline_model = "Agglomerative / HDBSCAN"
+        eval_metric = "Silhouette Score & Davies-Bouldin Index"
+        model_rationale = (
+            "Standardized distance-based geometric clustering to identify optimal customer segments, "
+            "with k-clusters selected via Silhouette coefficient maximization."
+        )
+    else:
+        model_name = "Random Forest / Gradient Boosting"
+        primary_model = "Random Forest"
+        baseline_model = "Linear / Logistic Baseline"
+        eval_metric = "Cross-Validation Score"
+        model_rationale = "General tabular machine learning modeling with cross-validated ensemble learning."
+
+    recommended_model = {
+        "name": model_name,
+        "primary": primary_model,
+        "baseline": baseline_model,
+        "metric": eval_metric,
+        "rationale": model_rationale,
+        "task_type": task_type
+    }
+
     return {
         "task_type": task_type,
         "target_column": target_column,
@@ -115,5 +164,7 @@ def analyze_prompt_and_data(prompt: str, columns: List[str], dtypes: Dict[str, s
         "outlier_method": outlier_method,
         "selection_method": selection_method,
         "objective_summary": objective_summary,
+        "recommended_model": recommended_model,
         "user_prompt": prompt
     }
+

@@ -1341,3 +1341,314 @@ body {
 .toast.success { border-left: 4px solid var(--success); }
 .toast.info { border-left: 4px solid var(--primary); }
 .toast.error { border-left: 4px solid var(--danger); }
+
+/* ================= Recommended ML Model Box ================= */
+.recom-model-card {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--bg-card-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.recom-model-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+}
+
+.recom-model-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.recom-model-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.recom-model-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2.5px 8.5px;
+  border-radius: 12px;
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+[data-theme="dark"] .recom-model-tag {
+  background: #1e2238;
+  color: #a5b4fc;
+}
+
+.recom-model-rationale {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.recom-model-metric-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.recom-metric-label {
+  color: var(--text-subtle);
+  font-weight: 600;
+}
+
+.recom-metric-val {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ================= Modify Step Modal Enhancements ================= */
+.modify-step-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modify-section {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modify-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.what-changed-box {
+  background: var(--primary-50);
+  border: 1px solid var(--primary-light);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+[data-theme="dark"] .what-changed-box {
+  background: rgba(79, 70, 229, 0.1);
+  border-color: rgba(79, 70, 229, 0.25);
+}
+
+.what-changed-text {
+  font-size: 13px;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.what-changed-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.col-chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 38px;
+  padding: 8px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  max-height: 110px;
+  overflow-y: auto;
+}
+
+.col-removable-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .col-removable-chip {
+  background: #1e2540;
+  color: #a5b4fc;
+}
+
+.col-chip-remove-btn {
+  background: none;
+  border: none;
+  color: currentColor;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.col-chip-remove-btn:hover {
+  opacity: 1;
+}
+
+.col-search-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-search-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  outline: none;
+}
+
+.col-search-input:focus {
+  border-color: var(--primary);
+}
+
+.col-quick-btn {
+  padding: 6px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.col-quick-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.col-checklist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.col-check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-main);
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+  font-size: 12.5px;
+  user-select: none;
+  transition: all 0.15s;
+}
+
+.col-check-item:hover {
+  border-color: var(--primary);
+  background: var(--primary-50);
+}
+
+.col-check-item.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+[data-theme="dark"] .col-check-item.selected {
+  background: rgba(79, 70, 229, 0.18);
+  border-color: rgba(79, 70, 229, 0.4);
+}
+
+.col-type-badge {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--bg-card);
+  color: var(--text-subtle);
+}
+
+.col-type-badge.num {
+  color: var(--primary);
+}
+
+.col-type-badge.cat {
+  color: var(--purple);
+}
+
+.btn-danger-confirm {
+  background: var(--danger);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-danger-confirm:hover {
+  background: #dc2626;
+}
+
+.reject-warning-box {
+  background: var(--danger-light);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--danger);
+  line-height: 1.5;
+}
+
